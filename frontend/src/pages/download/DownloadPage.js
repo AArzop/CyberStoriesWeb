@@ -14,83 +14,13 @@ import '../../resources/js/amp-mustache'
 import '../../resources/js/amp-sidebar'
 
 import './css/download.css'
+import NavigationBar from '../../components/NavigationBar'
 
 class DownloadPage extends Component {
   render () {
     return (
       <div>
-        <amp-sidebar id="sidebar" class="cid-r9hYnpdbBm" layout="nodisplay" side="right">
-          <div className="builder-sidebar" id="builder-sidebar">
-            <button on="tap:sidebar.close" className="close-sidebar">
-              <span/>
-              <span/>
-            </button>
-            {/* NAVBAR ITEMS */}
-            <ul className="navbar-nav nav-dropdown" data-app-modern-menu="true">
-              <li className="nav-item">
-                <a className="nav-link mbr-bold link text-black display-7" href="page4.html">Essayer</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link mbr-bold link text-black display-7" href="page6.html">Télécharger</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link mbr-bold link text-black display-7" href="page2.html">News</a>
-              </li>
-            </ul>
-            {/* NAVBAR ITEMS END */}
-            {/* SOCIAL ICON */}
-            {/* SOCIAL ICON END */}
-            {/* SHOW BUTTON */}
-            <div className="navbar-buttons mbr-section-btn"><a
-              className="btn btn-md mbr-bold btn-primary-outline display-7" href="page3.html">créer un compte</a></div>
-            {/* SHOW BUTTON END */}
-          </div>
-        </amp-sidebar>
-        <section className="menu1 menu horizontal-menu cid-r9hYnpdbBm" id="menu1-2w">
-          {/* <div class="menu-wrapper"> */}
-          <nav className="navbar navbar-dropdown navbar-expand-lg navbar-fixed-top">
-            <div className="menu-container container">
-              {/* SHOW LOGO */}
-              <div className="navbar-brand">
-                <span className="navbar-caption-wrap"><a className="navbar-caption mbr-bold text-black display-5"
-                                                         href="index.html">Cyberstories</a></span>
-              </div>
-              {/* SHOW LOGO END */}
-              {/* COLLAPSED MENU */}
-              <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                {/* NAVBAR ITEMS */}
-                <ul className="navbar-nav nav-dropdown" data-app-modern-menu="true">
-                  <li className="nav-item">
-                    <a className="nav-link mbr-bold link text-black display-7" href="page4.html">Essayer</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link mbr-bold link text-black display-7" href="page6.html">Télécharger</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link mbr-bold link text-black display-7" href="page2.html">News</a>
-                  </li>
-                </ul>
-                {/* NAVBAR ITEMS END */}
-                {/* SOCIAL ICON */}
-                {/* SOCIAL ICON END */}
-                {/* SHOW BUTTON */}
-                <div className="navbar-buttons mbr-section-btn"><a
-                  className="btn btn-md mbr-bold btn-primary-outline display-7" href="page3.html">créer un compte</a>
-                </div>
-                {/* SHOW BUTTON END */}
-              </div>
-              {/* COLLAPSED MENU END */}
-              <button on="tap:sidebar.toggle" className="ampstart-btn hamburger">
-                <span/>
-                <span/>
-                <span/>
-                <span/>
-              </button>
-            </div>
-          </nav>
-          {/* AMP plug */}
-          {/* </div> */}
-        </section>
+        <NavigationBar/>
         <section className="title1 cid-rBXIsLKtrc" id="title1-2y">
           {/* Block parameters controls (Blue "Gear" panel) */}
           <div className="mbr-overlay"/>

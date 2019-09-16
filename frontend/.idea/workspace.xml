@@ -5,26 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fb6c4dd-be81-42bf-8741-c52aba4c8fb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/article/ArticlePage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/article/css/article.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/download/css/download.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/news/NewsPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/news/css/news.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/register/RegisterPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/register/css/register.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/rent/RentPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/rent/css/rent.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/try/TryPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/try/css/try.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/css/grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NavigationBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/webpack-stats.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/webpack-stats.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/bundles/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/bundles/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/article/ArticlePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/article/ArticlePage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/download/DownloadPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/download/DownloadPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index/IndexPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/IndexPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/../templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/news/NewsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/news/NewsPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/register/RegisterPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/register/RegisterPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/rent/RentPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rent/RentPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/try/TryPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/try/TryPage.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1562860204529</updated>
       <workItem from="1562860206741" duration="2793000" />
-      <workItem from="1568624468401" duration="18968000" />
+      <workItem from="1568624468401" duration="21155000" />
     </task>
     <servers />
   </component>

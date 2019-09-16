@@ -55,7 +55,7 @@ class App extends Component {
               <Route exact path={'/leaderboard/:playerId/'} component={PlayerDetailsPage}/>
               <Route exact path={'/gameresult_visible/'} component={GameResultVisiblePage}/>
               <Route exact path={'/accounts/login/'} component={LoginPage}/>
-              <Route exact path={'/accounts/register/'} component={RegisterPage}/>
+              <Route exact path={'/register/'} component={RegisterPage}/>
               <Route exact path={'/accounts/register/done/'} component={RegisterDonePage}/>
               <Route exact path={'/accounts/profile/'} component={ProfilePage}/>
               <Route exact path={'/accounts/logout/'} component={IndexPage}/>

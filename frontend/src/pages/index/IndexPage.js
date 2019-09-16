@@ -21,83 +21,14 @@ import mails from './images/mails.png'
 import office2 from './images/office2.png'
 import office3 from './images/office3.png'
 import web from './images/web.png'
+import { Link } from 'react-router-dom'
+import NavigationBar from '../../components/NavigationBar'
 
 class IndexPage extends Component {
   render () {
     return (
       <div>
-        <amp-sidebar id="sidebar" class="cid-r9hYnpdbBm" layout="nodisplay" side="right">
-          <div className="builder-sidebar" id="builder-sidebar">
-            <button on="tap:sidebar.close" className="close-sidebar">
-              <span/>
-              <span/>
-            </button>
-            {/* NAVBAR ITEMS */}
-            <ul className="navbar-nav nav-dropdown" data-app-modern-menu="true">
-              <li className="nav-item">
-                <a className="nav-link mbr-bold link text-black display-7" href="page4.html">Essayer</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link mbr-bold link text-black display-7" href="page6.html">Télécharger</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link mbr-bold link text-black display-7" href="page2.html">News</a>
-              </li>
-            </ul>
-            {/* NAVBAR ITEMS END */}
-            {/* SOCIAL ICON */}
-            {/* SOCIAL ICON END */}
-            {/* SHOW BUTTON */}
-            <div className="navbar-buttons mbr-section-btn"><a
-              className="btn btn-md mbr-bold btn-primary-outline display-7" href="page3.html">créer un compte</a></div>
-            {/* SHOW BUTTON END */}
-          </div>
-        </amp-sidebar>
-        <section className="menu1 menu horizontal-menu cid-r9hYnpdbBm" id="menu1-1">
-          {/* <div class="menu-wrapper"> */}
-          <nav className="navbar navbar-dropdown navbar-expand-lg navbar-fixed-top">
-            <div className="menu-container container">
-              {/* SHOW LOGO */}
-              <div className="navbar-brand">
-                <span className="navbar-caption-wrap"><a className="navbar-caption mbr-bold text-black display-5"
-                                                         href="index.html">Cyberstories</a></span>
-              </div>
-              {/* SHOW LOGO END */}
-              {/* COLLAPSED MENU */}
-              <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                {/* NAVBAR ITEMS */}
-                <ul className="navbar-nav nav-dropdown" data-app-modern-menu="true">
-                  <li className="nav-item">
-                    <a className="nav-link mbr-bold link text-black display-7" href="page4.html">Essayer</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link mbr-bold link text-black display-7" href="page6.html">Télécharger</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link mbr-bold link text-black display-7" href="page2.html">News</a>
-                  </li>
-                </ul>
-                {/* NAVBAR ITEMS END */}
-                {/* SOCIAL ICON */}
-                {/* SOCIAL ICON END */}
-                {/* SHOW BUTTON */}
-                <div className="navbar-buttons mbr-section-btn"><a
-                  className="btn btn-md mbr-bold btn-primary-outline display-7" href="page3.html">créer un compte</a>
-                </div>
-                {/* SHOW BUTTON END */}
-              </div>
-              {/* COLLAPSED MENU END */}
-              <button on="tap:sidebar.toggle" className="ampstart-btn hamburger">
-                <span/>
-                <span/>
-                <span/>
-                <span/>
-              </button>
-            </div>
-          </nav>
-          {/* AMP plug */}
-          {/* </div> */}
-        </section>
+        <NavigationBar/>
         <section className="header1 cid-r9hYfl02Zb" id="header1-0">
           <div className="mbr-overlay"/>
           <div className="container">
@@ -106,8 +37,8 @@ class IndexPage extends Component {
                 <h1 className="mbr-section-title mbr-fonts-style mbr-bold display-1">CYBERSTORIES</h1>
                 <h2 className="mbr-section-subtitle mbr-fonts-style mbr-pt-3 display-2">Le jeu pour la cybersécurité en
                   réalité virtuelle</h2>
-                <div className="mbr-section-btn mbr-pt-4"><a className="btn btn-white display-7" href="page6.html">COMMENCER
-                  MAINTENANT</a></div>
+                <div className="mbr-section-btn mbr-pt-4"><Link className="btn btn-white display-7" to="/download">COMMENCER
+                  MAINTENANT</Link></div>
               </div>
             </div>
           </div>
@@ -460,7 +391,7 @@ class IndexPage extends Component {
                                   cx={150} cy={150} r={135}/>
                         </svg>
                       </div>
-                      <a href="index.html"/>
+                      <Link to="/"/>
                     </amp-img>
                   </div>
                   <div className="card-box mbr-m-auto mbr-pt-3 mbr-pb-3 mbr-px-4">
