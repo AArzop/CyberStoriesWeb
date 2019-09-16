@@ -4,7 +4,9 @@
         "es6": true,
         "jest": true
     },
-    "extends": ["standard"],
+    "extends": [
+        "standard"
+    ],
     "globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
@@ -20,8 +22,9 @@
         "react"
     ],
     "rules": {
-       "react/jsx-uses-react": "error", 
-       "react/jsx-uses-vars": "error"
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error",
+        "indent": "warn"
     },
     "parser": "babel-eslint"
 }
