@@ -25,7 +25,7 @@ class IndexPage extends Component {
   render () {
     return (
       <div>
-        <amp-sidebar id="sidebar" className="cid-r9hYnpdbBm" layout="nodisplay" side="right">
+        <amp-sidebar id="sidebar" class="cid-r9hYnpdbBm" layout="nodisplay" side="right">
           <div className="builder-sidebar" id="builder-sidebar">
             <button on="tap:sidebar.close" className="close-sidebar">
               <span/>
@@ -231,7 +231,7 @@ class IndexPage extends Component {
                   <amp-img lightbox
                            src={chairs}
                            layout="responsive" width="320.27027027027026" height={180} alt=""
-                           className="placeholder-loader">
+                           class="placeholder-loader">
                     <div placeholder className="placeholder">
                       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                         <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
@@ -256,7 +256,7 @@ class IndexPage extends Component {
                   <amp-img lightbox
                            src={city}
                            layout="responsive" width="320.27027027027026" height={180} alt=""
-                           className="placeholder-loader">
+                           class="placeholder-loader">
                     <div placeholder className="placeholder">
                       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                         <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
@@ -281,7 +281,7 @@ class IndexPage extends Component {
                   <amp-img lightbox
                            src={conf}
                            layout="responsive" width="320.27027027027026" height={180} alt=""
-                           className="placeholder-loader">
+                           class="placeholder-loader">
                     <div placeholder className="placeholder">
                       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                         <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
@@ -331,7 +331,7 @@ class IndexPage extends Component {
                   <amp-img lightbox
                            src={mails}
                            layout="responsive" width="320.27027027027026" height={180} alt=""
-                           className="placeholder-loader">
+                           class="placeholder-loader">
                     <div placeholder className="placeholder">
                       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                         <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
@@ -356,7 +356,7 @@ class IndexPage extends Component {
                   <amp-img lightbox
                            src={office2}
                            layout="responsive" width="320.27027027027026" height={180} alt=""
-                           className="placeholder-loader">
+                           class="placeholder-loader">
                     <div placeholder className="placeholder">
                       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                         <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
@@ -381,7 +381,7 @@ class IndexPage extends Component {
                   <amp-img lightbox
                            src={office3}
                            layout="responsive" width="320.27027027027026" height={180} alt=""
-                           className="placeholder-loader">
+                           class="placeholder-loader">
                     <div placeholder className="placeholder">
                       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                         <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
@@ -406,7 +406,7 @@ class IndexPage extends Component {
                   <amp-img lightbox
                            src={web}
                            layout="responsive" width="320.27027027027026" height={180} alt=""
-                           className="placeholder-loader">
+                           class="placeholder-loader">
                     <div placeholder className="placeholder">
                       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                         <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
@@ -450,7 +450,7 @@ class IndexPage extends Component {
                 <div className="card-wrapper mbr-column">
                   <div className="card-img mbr-flex">
                     <amp-img src="https://app.8b.io/app/themes/webamp/projects/gaming/assets/images/4-696x392.jpg"
-                             layout="responsive" width={348} height={196} alt="" className="placeholder-loader">
+                             layout="responsive" width={348} height={196} alt="" class="placeholder-loader">
                       <div placeholder className="placeholder">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                           <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
@@ -476,7 +476,7 @@ class IndexPage extends Component {
                 <div className="card-wrapper mbr-column">
                   <div className="card-img mbr-flex">
                     <amp-img src="https://app.8b.io/app/themes/webamp/projects/gaming/assets/images/3-696x392.jpg"
-                             layout="responsive" width={348} height={196} alt="" className="placeholder-loader">
+                             layout="responsive" width={348} height={196} alt="" class="placeholder-loader">
                       <div placeholder className="placeholder">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                           <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
@@ -503,7 +503,7 @@ class IndexPage extends Component {
                   <div className="card-img mbr-flex">
                     <amp-img src="https://app.8b.io/app/themes/webamp/projects/gaming/assets/images/1-696x391.jpg"
                              layout="responsive" width="347.10997442455243" height={195} alt=""
-                             className="placeholder-loader">
+                             class="placeholder-loader">
                       <div placeholder className="placeholder">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                           <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
@@ -573,7 +573,7 @@ class IndexPage extends Component {
             <div className="mbr-row mbr-row-reverse">
               <div className="video-block mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-8">
                 <amp-youtube width={16} height={9} layout="responsive" data-videoid="SGOJzzqkga0"
-                             className="placeholder-loader"/>
+                             class="placeholder-loader"/>
               </div>
               <div className="text-wrap mbr-col-sm-12 mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-4">
                 <p className="mbr-text mbr-fonts-style display-7">
@@ -697,7 +697,7 @@ class IndexPage extends Component {
                 <div className="card-wrapper mbr-column">
                   <div className="card-img mbr-flex">
                     <amp-img src="https://app.8b.io/app/themes/webamp/projects/gaming/assets/images/1.png"
-                             layout="responsive" width="100.8" height={84} alt="" className="mobirise-loader">
+                             layout="responsive" width="100.8" height={84} alt="" class="mobirise-loader">
                       <div placeholder className="placeholder">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                           <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
@@ -715,7 +715,7 @@ class IndexPage extends Component {
                 <div className="card-wrapper mbr-column">
                   <div className="card-img mbr-flex">
                     <amp-img src="https://app.8b.io/app/themes/webamp/projects/gaming/assets/images/2.png"
-                             layout="responsive" width="100.8" height={84} alt="" className="mobirise-loader">
+                             layout="responsive" width="100.8" height={84} alt="" class="mobirise-loader">
                       <div placeholder className="placeholder">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                           <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
@@ -733,7 +733,7 @@ class IndexPage extends Component {
                 <div className="card-wrapper mbr-column">
                   <div className="card-img mbr-flex">
                     <amp-img src="https://app.8b.io/app/themes/webamp/projects/gaming/assets/images/3.png"
-                             layout="responsive" width="100.8" height={84} alt="" className="mobirise-loader">
+                             layout="responsive" width="100.8" height={84} alt="" class="mobirise-loader">
                       <div placeholder className="placeholder">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                           <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
@@ -751,7 +751,7 @@ class IndexPage extends Component {
                 <div className="card-wrapper mbr-column">
                   <div className="card-img mbr-flex">
                     <amp-img src="https://app.8b.io/app/themes/webamp/projects/gaming/assets/images/4.png"
-                             layout="responsive" width="100.8" height={84} alt="" className="mobirise-loader">
+                             layout="responsive" width="100.8" height={84} alt="" class="mobirise-loader">
                       <div placeholder className="placeholder">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                           <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
@@ -769,7 +769,7 @@ class IndexPage extends Component {
                 <div className="card-wrapper mbr-column">
                   <div className="card-img mbr-flex">
                     <amp-img src="https://app.8b.io/app/themes/webamp/projects/gaming/assets/images/5.png"
-                             layout="responsive" width="100.8" height={84} alt="" className="mobirise-loader">
+                             layout="responsive" width="100.8" height={84} alt="" class="mobirise-loader">
                       <div placeholder className="placeholder">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                           <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}

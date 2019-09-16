@@ -5,32 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fb6c4dd-be81-42bf-8741-c52aba4c8fb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/index/IndexPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/index/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/css/amp-form.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/css/amp-lightbox-gallery.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/css/amp-loader.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/css/amp-sidebar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/css/amp.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/js/amp-autolightbox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/js/amp-form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/js/amp-lightbox-gallery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/js/amp-mustache.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/js/amp-sidebar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/js/amp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/cybersecurity_serious_game.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/cybersecurity_serious_game.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Google_App_Engine_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Google_App_Engine_SDK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/download/DownloadPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/webpack-stats.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/webpack-stats.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/bundles/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/bundles/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/IndexPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/formData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/formData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/../templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/IndexPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/IndexPage.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1562860204529</updated>
       <workItem from="1562860206741" duration="2793000" />
-      <workItem from="1568624468401" duration="12808000" />
+      <workItem from="1568624468401" duration="14106000" />
     </task>
     <servers />
   </component>
