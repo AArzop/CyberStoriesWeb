@@ -21,16 +21,10 @@ class RegisterPage extends Component {
       <div>
         <NavigationBar/>
         <section className="form1 cid-rBWI8btg16" id="form1-23">
-          {/*  */}
-          {/*  */}
-          {/* Overlay */}
-          {/* Content */}
           <div className="container align-center mbr-white">
-            {/* Title */}
             <div className="title-wrap">
               <h1 className="mbr-section-title mbr-fonts-style display-2"><strong>Créer un compte</strong></h1>
             </div>
-            {/* Forms */}
             <div className="mbr-row mbr-jc-c">
               <div data-form-type="formoid" className="mbr-col-lg-7">
                 <form className="mbr-form" method="post" target="_top"
@@ -41,30 +35,25 @@ class RegisterPage extends Component {
                   type="hidden" name="email" data-form-email="true"
                   defaultValue="ZXuclvOpwgnw9rfj9otdkpvl0Lv/nBImbIUpfwqbe2Eva+Kjm0PJ3Ra6pghuD73sD9a0rFslOKBeXK9uJwj9OozOxLtNPfPfr0bcFJM2ZyipOF8fDVYQStPPsecZe+y6"/>
                   <div className="bg-for-datepicker"/>
-                  {/* Succes/Error */}
                   <div submit-success>
                     <template data-form-alert type="amp-mustache"/>
                   </div>
                   <div submit-error>
                     <template data-form-alert type="amp-mustache"/>
                   </div>
-                  {/* Fieldset */}
                   <div className="fieldset">
-                    {/* 1 */}
                     <div className="field" data-for="form[data][0][1]">
                       <input type="hidden" name="form[data][0][0]" defaultValue="Name" id="form[data][0][0]-form1-23"
                              data-form-field/>
                       <input type="text" name="form[data][0][1]" data-form-field="Name" placeholder="Name" required
                              id="form[data][0][1]-form1-23"/>
                     </div>
-                    {/* 2 */}
                     <div className="field" data-for="form[data][1][1]">
                       <input type="hidden" name="form[data][1][0]" defaultValue="Email" id="form[data][1][0]-form1-23"
                              data-form-field/>
                       <input type="email" name="form[data][1][1]" data-form-field="Email" placeholder="Email" required
                              id="form[data][1][1]-form1-23"/>
                     </div>
-                    {/* 3 */}
                     <div className="field" data-for="form[data][2][1]">
                       <div className="date-picker-wrap">
                         <input type="hidden" name="form[data][2][0]" defaultValue="Date" id="form[data][2][0]-form1-23"
@@ -78,7 +67,6 @@ class RegisterPage extends Component {
                         </amp-date-picker>
                       </div>
                     </div>
-                    {/* 4 */}
                     <div className="field" data-for="form[data][3][1]">
                       <input type="hidden" name="form[data][3][0]" defaultValue="Time" id="form[data][3][0]-form1-23"
                              data-form-field/>
@@ -86,21 +74,18 @@ class RegisterPage extends Component {
                              placeholder="Time" required defaultValue="12:00" min="09:00" max="18:00" step={60}
                              id="form[data][3][1]-form1-23"/>
                     </div>
-                    {/* 5 */}
                     <div className="field" data-for="form[data][4][1]">
                       <input type="hidden" name="form[data][4][0]" defaultValue="Service" id="form[data][4][0]-form1-23"
                              data-form-field/>
                       <input type="text" name="form[data][4][1]" data-form-field="Service" placeholder="Name of Service"
                              required id="form[data][4][1]-form1-23"/>
                     </div>
-                    {/* 6 */}
                     <div className="field" data-for="form[data][5][1]">
                       <input type="hidden" name="form[data][5][0]" defaultValue="Phone" id="form[data][5][0]-form1-23"
                              data-form-field/>
                       <input type="tel" name="form[data][5][1]" data-form-field="Phone" placeholder="Phone" required
                              id="form[data][5][1]-form1-23"/>
                     </div>
-                    {/* Button */}
                     <div className="align-center">
                       <button type="submit" className="btn btn-primary btn-form display-4">
                         Valider

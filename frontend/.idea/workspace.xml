@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fb6c4dd-be81-42bf-8741-c52aba4c8fb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/ScrollToTop.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/webpack-stats.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/webpack-stats.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/bundles/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/bundles/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/download/DownloadPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/download/DownloadPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/IndexPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/IndexPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/news/NewsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/news/NewsPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/register/RegisterPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/register/RegisterPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/rent/RentPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rent/RentPage.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,7 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1562860204529</updated>
       <workItem from="1562860206741" duration="2793000" />
-      <workItem from="1568624468401" duration="23470000" />
+      <workItem from="1568624468401" duration="23579000" />
     </task>
     <servers />
   </component>

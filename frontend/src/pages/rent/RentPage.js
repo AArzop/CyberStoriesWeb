@@ -22,7 +22,6 @@ class RentPage extends Component {
       <div>
         <NavigationBar/>
         <section className="title1 cid-rBTdh5s0Xo" id="title1-1m">
-          {/*Block parameters controls (Blue "Gear" panel) */}
           <div className="mbr-overlay"/>
           <div className="container">
             <div className="title">
