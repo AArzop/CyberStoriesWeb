@@ -1,1 +1,1 @@
-{"status":"done","chunks":{"main":[{"name":"main.js","path":"/home/emmanuel/Repositories/Cyberstories/website/frontend/dist/bundles/main.js"}]}}
+{"status":"done","chunks":{"main":[{"name":"main.js","path":"/home/emmanuel/Repositories/Cyberstories/website/frontend/dist/bundles/main.js"}]},"error":"ModuleBuildError","message":"Module build failed (from ./node_modules/css-loader/dist/cjs.js):\nCssSyntaxError\n\n(8:1) Unexpected }\n\n   6 |     padding-left: 1rem;\n   7 | }\n>  8 | }\n     | ^\n   9 | \n  10 | @media (min-width: 768px) {\n"}

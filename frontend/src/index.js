@@ -5,7 +5,7 @@ import { Provider } from 'react-redux'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import IndexPage from './pages/index/IndexPage'
 import DocumentationPage from './pages/DocumentationPage'
-import DownloadPage from './pages/DownloadPage2'
+import DownloadPage from './pages/download/DownloadPage'
 import LeaderboardPage from './pages/LeaderboardPage'
 import WifiPage from './pages/WifiPage'
 import VirusPage from './pages/VirusPage'
@@ -22,14 +22,17 @@ import PasswordResetDonePage from './pages/PasswordResetDonePage'
 import PasswordResetConfirmPage from './pages/PasswordResetConfirmPage'
 import PasswordResetCompletePage from './pages/PasswordResetCompletePage'
 import GameMasterTokenPage from './pages/GameMasterTokenPage'
-import RegisterPage from './pages/RegisterPage'
+import RegisterPage from './pages/register/RegisterPage'
 import GameMasterPage from './pages/GameMasterPage'
 import PlayerDetailsPage from './pages/PlayerDetailsPage'
 import RegisterDonePage from './pages/RegisterDonePage'
-import ArticlesPage from './pages/ArticlesPage'
+import NewsPage from './pages/news/NewsPage'
 import GameMasterWriteEmailPage from './pages/GameMasterWriteEmailPage'
 import EntrepriseCreateAccountPage from './pages/EntrepriseCreateAccountPage'
+import TryPage from './pages/try/TryPage'
 import { ParallaxProvider } from 'react-scroll-parallax'
+import RentPage from './pages/rent/RentPage'
+import ArticlePage from './pages/article/ArticlePage'
 
 class App extends Component {
   render () {
@@ -40,7 +43,10 @@ class App extends Component {
             <Switch>
               <Route exact path={'/download/'} component={DownloadPage}/>
               <Route exact path={'/documentation/'} component={DocumentationPage}/>
-              <Route exact path={'/articles/'} component={ArticlesPage}/>
+              <Route exact path={'/rent'} component={RentPage}/>
+              <Route exact path={'/try'} component={TryPage}/>
+              <Route exact path={'/news/'} component={NewsPage}/>
+              <Route exact path={'/article/'} component={ArticlePage}/>
               <Route exact path={'/articles/ads/'} component={AdsPage}/>
               <Route exact path={'/articles/password/'} component={PasswordPage}/>
               <Route exact path={'/articles/virus/'} component={VirusPage}/>
