@@ -14,6 +14,7 @@ import '../../resources/js/amp-sidebar'
 
 import './css/news.css'
 import NavigationBar from '../../components/NavigationBar'
+import { Link } from 'react-router-dom'
 
 class NewsPage extends Component {
   render () {
@@ -21,7 +22,6 @@ class NewsPage extends Component {
       <div>
         <NavigationBar/>
         <section className="title1 cid-rBWFdKsqJW" id="title1-1t">
-          {/*Block parameters controls (Blue "Gear" panel) */}
           <div className="mbr-overlay"/>
           <div className="container">
             <div className="title">
@@ -56,8 +56,8 @@ class NewsPage extends Component {
                     <h4 className="card-subtitle mbr-pt-3 mbr-fonts-style mbr-bold display-7">Card Subtitle</h4>
                     <p className="card-text mbr-fonts-style mbr-pt-2 display-7">Click on the text in the block to select
                       it and enter the text you want to show. Click on the image to set another one.</p>
-                    <div className="card-btn mbr-section-btn mbr-pt-2"><a className="btn btn-primary display-7"
-                                                                          href="page5.html">Read More</a></div>
+                    <div className="card-btn mbr-section-btn mbr-pt-2"><Link className="btn btn-primary display-7"
+                                                                          to="/article">Read More</Link></div>
                   </div>
                 </div>
               </div>
@@ -81,8 +81,8 @@ class NewsPage extends Component {
                     <h4 className="card-subtitle mbr-pt-3 mbr-fonts-style mbr-bold display-7">Card Subtitle</h4>
                     <p className="card-text mbr-fonts-style mbr-pt-2 display-7">Click on the text in the block to select
                       it and enter the text you want to show. Click on the image to set another one.</p>
-                    <div className="card-btn mbr-section-btn mbr-pt-2"><a className="btn btn-primary display-7"
-                                                                          href="page5.html">Read More</a></div>
+                    <div className="card-btn mbr-section-btn mbr-pt-2"><Link className="btn btn-primary display-7"
+                                                                          to="/article">Read More</Link></div>
                   </div>
                 </div>
               </div>
@@ -107,8 +107,8 @@ class NewsPage extends Component {
                     <h4 className="card-subtitle mbr-pt-3 mbr-fonts-style mbr-bold display-7">Card Subtitle</h4>
                     <p className="card-text mbr-fonts-style mbr-pt-2 display-7">Click on the text in the block to select
                       it and enter the text you want to show. Click on the image to set another one.</p>
-                    <div className="card-btn mbr-section-btn mbr-pt-2"><a className="btn btn-primary display-7"
-                                                                          href="page5.html">Read More</a></div>
+                    <div className="card-btn mbr-section-btn mbr-pt-2"><Link className="btn btn-primary display-7"
+                                                                          to="/">Read More</Link></div>
                   </div>
                 </div>
               </div>
@@ -141,8 +141,8 @@ class NewsPage extends Component {
                     <h4 className="card-subtitle mbr-pt-3 mbr-fonts-style mbr-bold display-7">Card Subtitle</h4>
                     <p className="card-text mbr-fonts-style mbr-pt-2 display-7">Click on the text in the block to select
                       it and enter the text you want to show. Click on the image to set another one.</p>
-                    <div className="card-btn mbr-section-btn mbr-pt-2"><a className="btn btn-primary display-7"
-                                                                          href="page5.html">Read More</a></div>
+                    <div className="card-btn mbr-section-btn mbr-pt-2"><Link className="btn btn-primary display-7"
+                                                                          to="/article">Read More</Link></div>
                   </div>
                 </div>
               </div>
@@ -174,8 +174,8 @@ class NewsPage extends Component {
                     <h3 className="card-title mbr-bold mbr-fonts-style display-5">Card Title One</h3>
                     <p className="card-text mbr-fonts-style mbr-pt-2 display-7">Click on the text in the block to select
                       it and enter the text you want to show. Click on the image to set another one.</p>
-                    <div className="card-btn mbr-section-btn mbr-pt-2"><a className="btn btn-primary display-7"
-                                                                          href="page5.html">Read More</a></div>
+                    <div className="card-btn mbr-section-btn mbr-pt-2"><Link className="btn btn-primary display-7"
+                                                                          to="/article">Read More</Link></div>
                   </div>
                 </div>
               </div>
@@ -198,8 +198,8 @@ class NewsPage extends Component {
                     <h3 className="card-title mbr-bold mbr-fonts-style display-5">Card Title Two</h3>
                     <p className="card-text mbr-fonts-style mbr-pt-2 display-7">Click on the text in the block to select
                       it and enter the text you want to show. Click on the image to set another one.</p>
-                    <div className="card-btn mbr-section-btn mbr-pt-2"><a className="btn btn-primary display-7"
-                                                                          href="page5.html">Read More</a></div>
+                    <div className="card-btn mbr-section-btn mbr-pt-2"><Link className="btn btn-primary display-7"
+                                                                          to="/article">Read More</Link></div>
                   </div>
                 </div>
               </div>
@@ -223,8 +223,8 @@ class NewsPage extends Component {
                     <h3 className="card-title mbr-bold mbr-fonts-style display-5">Card Title Three</h3>
                     <p className="card-text mbr-fonts-style mbr-pt-2 display-7">Click on the text in the block to select
                       it and enter the text you want to show. Click on the image to set another one.</p>
-                    <div className="card-btn mbr-section-btn mbr-pt-2"><a className="btn btn-primary display-7"
-                                                                          href="page5.html">Read More</a></div>
+                    <div className="card-btn mbr-section-btn mbr-pt-2"><Link className="btn btn-primary display-7"
+                                                                          to="/article">Read More</Link></div>
                   </div>
                 </div>
               </div>

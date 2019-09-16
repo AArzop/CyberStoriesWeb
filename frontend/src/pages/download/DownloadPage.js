@@ -15,6 +15,7 @@ import '../../resources/js/amp-sidebar'
 
 import './css/download.css'
 import NavigationBar from '../../components/NavigationBar'
+import { Link } from 'react-router-dom'
 
 class DownloadPage extends Component {
   render () {
@@ -55,7 +56,7 @@ class DownloadPage extends Component {
                       it and enter the text you want to show. Click on the icon to select another icon in the icons
                       list.</p>
                     <div className="card-btn mbr-section-btn mbr-pt-2"><a className="btn btn-lg btn-primary display-7"
-                                                                          href="https://8b.com">Télécharger</a></div>
+                                                                          href="/">Télécharger</a></div>
                   </div>
                 </div>
               </div>
@@ -76,7 +77,7 @@ class DownloadPage extends Component {
                       it and enter the text you want to show. Click on the icon to select another icon in the icons
                       list.</p>
                     <div className="card-btn mbr-section-btn mbr-pt-2"><a className="btn btn-lg btn-primary display-7"
-                                                                          href="https://8b.com">Télécharger</a></div>
+                                                                          href="/">Télécharger</a></div>
                   </div>
                 </div>
               </div>
@@ -97,7 +98,7 @@ class DownloadPage extends Component {
                       it and enter the text you want to show. Click on the icon to select another icon in the icons
                       list.</p>
                     <div className="card-btn mbr-section-btn mbr-pt-2"><a className="btn btn-lg btn-primary display-7"
-                                                                          href="https://8b.com">Télécharger</a></div>
+                                                                          href="/">Télécharger</a></div>
                   </div>
                 </div>
               </div>
@@ -115,13 +116,13 @@ class DownloadPage extends Component {
               <ol>
                 <li><strong>MOBILE FRIENDLY</strong> - no special actions required, all sites you make with 8b Web
                   Builder are mobile-friendly. You don't have to create a special mobile version of your site, it will
-                  adapt automagically. <a href="https://8b.com/" className="text-primary">Try it now!</a></li>
+                  adapt automagically. <a href="/" className="text-primary">Try it now!</a></li>
                 <li><strong>EASY AND SIMPLE</strong> - cut down the development time with drag-and-drop website builder.
                   Drop the blocks into the page, edit content inline and publish - no technical skills required. <a
-                    href="https://8b.com/" className="text-primary">Try it now!</a></li>
+                    href="/" className="text-primary">Try it now!</a></li>
                 <li><strong>UNIQUE STYLES</strong> - choose from the large selection of latest pre-made blocks -
                   full-screen intro, content slider, responsive image gallery with lightbox, parallax scrolling,
-                  hamburger menu, sticky header and more. <a href="https://8b.com/" className="text-primary">Try it
+                  hamburger menu, sticky header and more. <a href="/" className="text-primary">Try it
                     now!</a></li>
               </ol>
             </div>
@@ -139,8 +140,8 @@ class DownloadPage extends Component {
                   tools available today.</p>
               </div>
               <div className="btn-wrap mbr-col-lg-4 mbr-col-md-4 mbr-col-sm-12 mbr-flex mbr-column">
-                <div className="mbr-section-btn mbr-m-auto"><a className="btn btn-md btn-primary display-7"
-                                                               href="page1.html">Louer un casque</a></div>
+                <div className="mbr-section-btn mbr-m-auto"><Link className="btn btn-md btn-primary display-7"
+                                                                  to="/rent">Louer un casque</Link></div>
               </div>
             </div>
           </div>
@@ -159,7 +160,7 @@ class DownloadPage extends Component {
                               cx={150} cy={150} r={135}/>
                     </svg>
                   </div>
-                  <a href="page1.html"/>
+                  <Link to="/rent"/>
                 </amp-img>
               </div>
               <div className="text-wrap mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-6">
@@ -184,8 +185,8 @@ class DownloadPage extends Component {
                   tools available today.</p>
               </div>
               <div className="btn-wrap mbr-col-lg-4 mbr-col-md-4 mbr-col-sm-12 mbr-flex mbr-column">
-                <div className="mbr-section-btn mbr-m-auto"><a className="btn btn-md btn-primary display-7"
-                                                               href="https://8b.com">Essayer cyberstories</a></div>
+                <div className="mbr-section-btn mbr-m-auto"><Link className="btn btn-md btn-primary display-7"
+                                                                  to="/try">Essayer cyberstories</Link></div>
               </div>
             </div>
           </div>
@@ -221,9 +222,9 @@ class DownloadPage extends Component {
           <div className="footer-container container">
             <div className="mbr-row link-items mbr-jc-c mbr-fonts-style display-7">
               <p className="mbr-text fLink mbr-px-1 mbr-white">Commandes</p><p
-              className="mbr-text fLink mbr-px-1 mbr-white"><a href="index.html#features3-2"
+              className="mbr-text fLink mbr-px-1 mbr-white"><a href="/"
                                                                className="text-white">TheSpotLight</a></p><p
-              className="mbr-text fLink mbr-px-1 mbr-white"><a href="index.html#video1-7"
+              className="mbr-text fLink mbr-px-1 mbr-white"><a href="/"
                                                                className="text-white">YouTube</a></p></div>
             <div className="copyright mbr-px-2 mbr-flex mbr-jc-c">
               <p className="mbr-text mbr-fonts-style mbr-white align-center display-7">© Copyright <span>2019</span>

@@ -164,7 +164,7 @@ class IndexPage extends Component {
                            src={chairs}
                            layout="responsive" width="320.27027027027026" height={180} alt=""
                            class="placeholder-loader">
-                    <div placeholder className="placeholder">
+                    <div placeholder={''} className="placeholder">
                       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                         <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
                                 strokeDashoffset={230} cx={150} cy={150} r={145}/>
@@ -189,7 +189,7 @@ class IndexPage extends Component {
                            src={city}
                            layout="responsive" width="320.27027027027026" height={180} alt=""
                            class="placeholder-loader">
-                    <div placeholder className="placeholder">
+                    <div placeholder={''} className="placeholder">
                       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                         <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
                                 strokeDashoffset={230} cx={150} cy={150} r={145}/>
@@ -214,7 +214,7 @@ class IndexPage extends Component {
                            src={conf}
                            layout="responsive" width="320.27027027027026" height={180} alt=""
                            class="placeholder-loader">
-                    <div placeholder className="placeholder">
+                    <div placeholder={''} className="placeholder">
                       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                         <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
                                 strokeDashoffset={230} cx={150} cy={150} r={145}/>
@@ -239,7 +239,7 @@ class IndexPage extends Component {
                            src={entrance}
                            layout="responsive" width="320.27027027027026" height={180} alt=""
                            className="placeholder-loader">
-                    <div placeholder className="placeholder">
+                    <div placeholder={''} className="placeholder">
                       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                         <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
                                 strokeDashoffset={230} cx={150} cy={150} r={145}/>
@@ -264,7 +264,7 @@ class IndexPage extends Component {
                            src={mails}
                            layout="responsive" width="320.27027027027026" height={180} alt=""
                            class="placeholder-loader">
-                    <div placeholder className="placeholder">
+                    <div placeholder={''} className="placeholder">
                       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                         <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
                                 strokeDashoffset={230} cx={150} cy={150} r={145}/>
@@ -289,7 +289,7 @@ class IndexPage extends Component {
                            src={office2}
                            layout="responsive" width="320.27027027027026" height={180} alt=""
                            class="placeholder-loader">
-                    <div placeholder className="placeholder">
+                    <div placeholder={''} className="placeholder">
                       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                         <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
                                 strokeDashoffset={230} cx={150} cy={150} r={145}/>
@@ -314,7 +314,7 @@ class IndexPage extends Component {
                            src={office3}
                            layout="responsive" width="320.27027027027026" height={180} alt=""
                            class="placeholder-loader">
-                    <div placeholder className="placeholder">
+                    <div placeholder={''} className="placeholder">
                       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                         <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
                                 strokeDashoffset={230} cx={150} cy={150} r={145}/>
@@ -339,7 +339,7 @@ class IndexPage extends Component {
                            src={web}
                            layout="responsive" width="320.27027027027026" height={180} alt=""
                            class="placeholder-loader">
-                    <div placeholder className="placeholder">
+                    <div placeholder={''} className="placeholder">
                       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                         <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
                                 strokeDashoffset={230} cx={150} cy={150} r={145}/>
@@ -383,7 +383,7 @@ class IndexPage extends Component {
                   <div className="card-img mbr-flex">
                     <amp-img src="https://app.8b.io/app/themes/webamp/projects/gaming/assets/images/4-696x392.jpg"
                              layout="responsive" width={348} height={196} alt="" class="placeholder-loader">
-                      <div placeholder className="placeholder">
+                      <div placeholder={''} className="placeholder">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                           <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
                                   strokeDashoffset={230} cx={150} cy={150} r={145}/>
@@ -391,7 +391,7 @@ class IndexPage extends Component {
                                   cx={150} cy={150} r={135}/>
                         </svg>
                       </div>
-                      <Link to="/"/>
+                      <Link to="/article"/>
                     </amp-img>
                   </div>
                   <div className="card-box mbr-m-auto mbr-pt-3 mbr-pb-3 mbr-px-4">
@@ -399,8 +399,10 @@ class IndexPage extends Component {
                     <h4 className="card-subtitle mbr-pt-3 mbr-fonts-style display-4">PC</h4>
                     <p className="card-text mbr-fonts-style mbr-pt-2 display-7">Click on the text in the block to select
                       it and enter the text you want to show. Click on the image to set another one.</p>
-                    <div className="card-btn mbr-section-btn mbr-pt-2"><a className="btn btn-primary-outline display-4"
-                                                                          href="page5.html">En savoir plus</a></div>
+                    <div className="card-btn mbr-section-btn mbr-pt-2">
+                      <Link
+                        className="btn btn-primary-outline display-4"
+                        to="/article">En savoir plus</Link></div>
                   </div>
                 </div>
               </div>
@@ -409,7 +411,7 @@ class IndexPage extends Component {
                   <div className="card-img mbr-flex">
                     <amp-img src="https://app.8b.io/app/themes/webamp/projects/gaming/assets/images/3-696x392.jpg"
                              layout="responsive" width={348} height={196} alt="" class="placeholder-loader">
-                      <div placeholder className="placeholder">
+                      <div placeholder={''} className="placeholder">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                           <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
                                   strokeDashoffset={230} cx={150} cy={150} r={145}/>
@@ -417,7 +419,7 @@ class IndexPage extends Component {
                                   cx={150} cy={150} r={135}/>
                         </svg>
                       </div>
-                      <a href="index.html"/>
+                      <Link to="/article"/>
                     </amp-img>
                   </div>
                   <div className="card-box mbr-m-auto mbr-pt-3 mbr-pb-3 mbr-px-4">
@@ -425,8 +427,12 @@ class IndexPage extends Component {
                     <h4 className="card-subtitle mbr-pt-3 mbr-fonts-style display-4">PC</h4>
                     <p className="card-text mbr-fonts-style mbr-pt-2 display-7">Click on the text in the block to select
                       it and enter the text you want to show. Click on the image to set another one.</p>
-                    <div className="card-btn mbr-section-btn mbr-pt-2"><a className="btn btn-primary-outline display-4"
-                                                                          href="page5.html">En savoir plus</a></div>
+                    <div className="card-btn mbr-section-btn mbr-pt-2">
+                      <Link className="btn btn-primary-outline display-4"
+                            to="/article">
+                        En savoir plus
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -436,7 +442,7 @@ class IndexPage extends Component {
                     <amp-img src="https://app.8b.io/app/themes/webamp/projects/gaming/assets/images/1-696x391.jpg"
                              layout="responsive" width="347.10997442455243" height={195} alt=""
                              class="placeholder-loader">
-                      <div placeholder className="placeholder">
+                      <div placeholder={''} className="placeholder">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                           <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
                                   strokeDashoffset={230} cx={150} cy={150} r={145}/>
@@ -444,7 +450,7 @@ class IndexPage extends Component {
                                   cx={150} cy={150} r={135}/>
                         </svg>
                       </div>
-                      <a href="index.html"/>
+                      <Link to="/article"/>
                     </amp-img>
                   </div>
                   <div className="card-box mbr-m-auto mbr-pt-3 mbr-pb-3 mbr-px-4">
@@ -452,8 +458,9 @@ class IndexPage extends Component {
                     <h4 className="card-subtitle mbr-pt-3 mbr-fonts-style display-4">Play Station</h4>
                     <p className="card-text mbr-fonts-style mbr-pt-2 display-7">Click on the text in the block to select
                       it and enter the text you want to show. Click on the image to set another one.</p>
-                    <div className="card-btn mbr-section-btn mbr-pt-2"><a className="btn btn-primary-outline display-4"
-                                                                          href="page5.html">En savoir plus</a></div>
+                    <div className="card-btn mbr-section-btn mbr-pt-2">
+                      <Link className="btn btn-primary-outline display-4"
+                            to="/article">En savoir plus</Link></div>
                   </div>
                 </div>
               </div>
@@ -461,7 +468,6 @@ class IndexPage extends Component {
           </div>
         </section>
         <section className="info2 cid-rBWPT9Dh6i" id="info2-2l">
-          {/*Block parameters controls (Blue "Gear" panel) */}
           <div className="container">
             <div className="mbr-row mbr-jc-c">
               <div className="title-wrap mbr-col-lg-8 mbr-col-md-8 mbr-col-sm-12 mbr-flex mbr-column mbr-jc-c">
@@ -479,10 +485,10 @@ class IndexPage extends Component {
                                                                                                      data-form-email="true"
                                                                                                      defaultValue="6wKSpTh6nldoV4t53cdDzM1SBbjNF/tleRsJ3YBZfCeWSqdladRU84gvOWZAIoHSfD7TdxnxJ54ImUZXkIkPq9EkxH4OWE93SivgVOHyB9PZmptGFGvyiEHzZO2ZqLZE"/>
                     <div className="mbr-overlay"/>
-                    <div submit-success>
+                    <div submit-success={''}>
                       <template data-form-alert type="amp-mustache"/>
                     </div>
-                    <div submit-error>
+                    <div submit-error={''}>
                       <template data-form-alert type="amp-mustache"/>
                     </div>
                     <div className="fieldset">
@@ -630,7 +636,7 @@ class IndexPage extends Component {
                   <div className="card-img mbr-flex">
                     <amp-img src="https://app.8b.io/app/themes/webamp/projects/gaming/assets/images/1.png"
                              layout="responsive" width="100.8" height={84} alt="" class="mobirise-loader">
-                      <div placeholder className="placeholder">
+                      <div placeholder={''} className="placeholder">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                           <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
                                   strokeDashoffset={230} cx={150} cy={150} r={145}/>
@@ -638,7 +644,7 @@ class IndexPage extends Component {
                                   cx={150} cy={150} r={135}/>
                         </svg>
                       </div>
-                      <a href="index.html"/>
+                      <a href="/"/>
                     </amp-img>
                   </div>
                 </div>
@@ -648,7 +654,7 @@ class IndexPage extends Component {
                   <div className="card-img mbr-flex">
                     <amp-img src="https://app.8b.io/app/themes/webamp/projects/gaming/assets/images/2.png"
                              layout="responsive" width="100.8" height={84} alt="" class="mobirise-loader">
-                      <div placeholder className="placeholder">
+                      <div placeholder={''} className="placeholder">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                           <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
                                   strokeDashoffset={230} cx={150} cy={150} r={145}/>
@@ -656,7 +662,7 @@ class IndexPage extends Component {
                                   cx={150} cy={150} r={135}/>
                         </svg>
                       </div>
-                      <a href="index.html"/>
+                      <a href="/"/>
                     </amp-img>
                   </div>
                 </div>
@@ -666,7 +672,7 @@ class IndexPage extends Component {
                   <div className="card-img mbr-flex">
                     <amp-img src="https://app.8b.io/app/themes/webamp/projects/gaming/assets/images/3.png"
                              layout="responsive" width="100.8" height={84} alt="" class="mobirise-loader">
-                      <div placeholder className="placeholder">
+                      <div placeholder={''} className="placeholder">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                           <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
                                   strokeDashoffset={230} cx={150} cy={150} r={145}/>
@@ -674,7 +680,7 @@ class IndexPage extends Component {
                                   cx={150} cy={150} r={135}/>
                         </svg>
                       </div>
-                      <a href="index.html"/>
+                      <a href="/"/>
                     </amp-img>
                   </div>
                 </div>
@@ -684,7 +690,7 @@ class IndexPage extends Component {
                   <div className="card-img mbr-flex">
                     <amp-img src="https://app.8b.io/app/themes/webamp/projects/gaming/assets/images/4.png"
                              layout="responsive" width="100.8" height={84} alt="" class="mobirise-loader">
-                      <div placeholder className="placeholder">
+                      <div placeholder={''} className="placeholder">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                           <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
                                   strokeDashoffset={230} cx={150} cy={150} r={145}/>
@@ -692,7 +698,7 @@ class IndexPage extends Component {
                                   cx={150} cy={150} r={135}/>
                         </svg>
                       </div>
-                      <a href="index.html"/>
+                      <a href="/"/>
                     </amp-img>
                   </div>
                 </div>
@@ -702,7 +708,7 @@ class IndexPage extends Component {
                   <div className="card-img mbr-flex">
                     <amp-img src="https://app.8b.io/app/themes/webamp/projects/gaming/assets/images/5.png"
                              layout="responsive" width="100.8" height={84} alt="" class="mobirise-loader">
-                      <div placeholder className="placeholder">
+                      <div placeholder={''} className="placeholder">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                           <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
                                   strokeDashoffset={230} cx={150} cy={150} r={145}/>
@@ -710,7 +716,7 @@ class IndexPage extends Component {
                                   cx={150} cy={150} r={135}/>
                         </svg>
                       </div>
-                      <a href="index.html"/>
+                      <a href="/"/>
                     </amp-img>
                   </div>
                 </div>

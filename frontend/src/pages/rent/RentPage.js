@@ -14,6 +14,7 @@ import '../../resources/js/amp-sidebar'
 
 import './css/rent.css'
 import NavigationBar from '../../components/NavigationBar'
+import { Link } from 'react-router-dom'
 
 class RentPage extends Component {
   render () {
@@ -90,8 +91,8 @@ class RentPage extends Component {
                       </li>
                     </ul>
                   </div>
-                  <div className="card-button mbr-section-btn"><a href="https://8b.com"
-                                                                  className="btn btn-lg btn-primary display-7">LOUER</a>
+                  <div className="card-button mbr-section-btn"><Link to="/rent"
+                                                                  className="btn btn-lg btn-primary display-7">LOUER</Link>
                   </div>
                 </div>
               </div>
@@ -140,8 +141,8 @@ class RentPage extends Component {
                       </li>
                     </ul>
                   </div>
-                  <div className="card-button mbr-section-btn"><a href="https://8b.com"
-                                                                  className="btn btn-lg btn-primary display-7">LOUER</a>
+                  <div className="card-button mbr-section-btn"><Link to="/rent"
+                                                                  className="btn btn-lg btn-primary display-7">LOUER</Link>
                   </div>
                 </div>
               </div>
@@ -190,8 +191,8 @@ class RentPage extends Component {
                       </li>
                     </ul>
                   </div>
-                  <div className="card-button mbr-section-btn"><a href="https://8b.com"
-                                                                  className="btn btn-lg btn-primary display-7">LOUER</a>
+                  <div className="card-button mbr-section-btn"><Link to="/rent"
+                                                                  className="btn btn-lg btn-primary display-7">LOUER</Link>
                   </div>
                 </div>
               </div>
