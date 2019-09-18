@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fb6c4dd-be81-42bf-8741-c52aba4c8fb8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/login/LoginPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/login/css/login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/webpack-stats.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/webpack-stats.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/bundles/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/bundles/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/forms/RegisterForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/forms/RegisterForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/forms/LoginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/forms/LoginForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/register/RegisterPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/register/RegisterPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/AutoForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/AutoForm.js" afterDir="false" />
     </list>
@@ -38,7 +41,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/register/css/register.css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/login" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -47,6 +50,10 @@
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/pages/register/css/register.css" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/login" />
+      <recent name="$PROJECT_DIR$/src/pages/login/css" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/src/pages/index/images" />
@@ -81,7 +88,7 @@
       <workItem from="1568624468401" duration="25711000" />
       <workItem from="1568729064028" duration="165000" />
       <workItem from="1568753532776" duration="651000" />
-      <workItem from="1568797149200" duration="1344000" />
+      <workItem from="1568797149200" duration="2542000" />
     </task>
     <servers />
   </component>

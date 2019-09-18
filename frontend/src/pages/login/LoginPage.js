@@ -12,13 +12,13 @@ import '../../resources/js/amp-lightbox-gallery'
 import '../../resources/js/amp-mustache'
 import '../../resources/js/amp-sidebar'
 
-import './css/register.css'
+import './css/login.css'
 import NavigationBar from '../../components/NavigationBar'
 import Footer from '../../components/Footer'
-import RegisterForm from '../../forms/RegisterForm'
+import LoginForm from '../../forms/LoginForm'
 import { Link } from 'react-router-dom'
 
-class RegisterPage extends Component {
+class LoginPage extends Component {
   render () {
     return (
       <div>
@@ -26,18 +26,18 @@ class RegisterPage extends Component {
         <section className="form1 cid-rBWI8btg16" id="form1-23">
           <div className="container align-center mbr-white">
             <div className="title-wrap">
-              <h1 className="mbr-section-title mbr-fonts-style display-2"><strong>Créer un compte</strong></h1>
+              <h1 className="mbr-section-title mbr-fonts-style display-2"><strong>Se connecter</strong></h1>
             </div>
             <div className="mbr-row mbr-jc-c">
               <div data-form-type="formoid" className="mbr-col-lg-7">
-                <RegisterForm/>
+                <LoginForm/>
               </div>
             </div>
             <p className="card-text mbr-fonts-style mbr-pt-2 display-7">
-              Déjà un compte ? <span> </span>
-              <Link to="/login"
+              Pas de compte ?<span> </span>
+              <Link to="/register"
                     className="text-primary">
-                Se connecter
+                Créer un compte
               </Link>
             </p>
           </div>
@@ -48,4 +48,4 @@ class RegisterPage extends Component {
   }
 }
 
-export default RegisterPage
+export default LoginPage

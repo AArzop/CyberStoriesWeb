@@ -28,7 +28,7 @@ class LoginForm extends Component {
             this.props.history.push('/')
           })
         }}
-        buttonDisplayText={'Login'}
+        buttonDisplayText={'Se connecter'}
         feedbackOnValidFields={false}
         fields={[
           {

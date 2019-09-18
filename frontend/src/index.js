@@ -14,7 +14,7 @@ import PasswordPage from './pages/PasswordPage'
 import AdsPage from './pages/AdsPage'
 import NotFoundPage from './pages/NotFoundPage'
 import GameResultVisiblePage from './pages/GameResultVisiblePage'
-import LoginPage from './pages/LoginPage'
+import LoginPage from './pages/login/LoginPage'
 import ProfilePage from './pages/ProfilePage'
 import PasswordChangePage from './pages/PasswordChangePage'
 import PasswordChangeDonePage from './pages/PasswordChangeDonePage'
@@ -57,7 +57,7 @@ class App extends Component {
                 <Route exact path={'/leaderboard/'} component={LeaderboardPage}/>
                 <Route exact path={'/leaderboard/:playerId/'} component={PlayerDetailsPage}/>
                 <Route exact path={'/gameresult_visible/'} component={GameResultVisiblePage}/>
-                <Route exact path={'/accounts/login/'} component={LoginPage}/>
+                <Route exact path={'/login/'} component={LoginPage}/>
                 <Route exact path={'/register/'} component={RegisterPage}/>
                 <Route exact path={'/accounts/register/done/'} component={RegisterDonePage}/>
                 <Route exact path={'/accounts/profile/'} component={ProfilePage}/>
