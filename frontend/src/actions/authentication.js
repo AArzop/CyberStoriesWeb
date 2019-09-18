@@ -1,6 +1,8 @@
 import { withAjaxStoreData } from '../hocs/async'
 import { SET_AJAX_ERROR, SET_AJAX_RESPONSE } from './actions'
 
+export const AUTHENTICATE = 'AUTHENTICATE'
+
 const profileId = 'profile'
 
 export const setLoggedOut = () => ({ type: SET_AJAX_ERROR, payload: { id: profileId, error: 'logged out' } })

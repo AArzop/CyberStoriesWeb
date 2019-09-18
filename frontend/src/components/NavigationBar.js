@@ -12,6 +12,11 @@ import '../resources/js/amp-autolightbox'
 import '../resources/js/amp-lightbox-gallery'
 import '../resources/js/amp-mustache'
 import '../resources/js/amp-sidebar'
+import { connect } from 'react-redux'
+
+const mapStateToProps = state => ({
+  authentication: state.authentication
+})
 
 class NavigationBar extends Component {
   render () {
@@ -34,8 +39,17 @@ class NavigationBar extends Component {
                 <Link className="nav-link mbr-bold link text-black display-7" to="/news">News</Link>
               </li>
             </ul>
-            <div className="navbar-buttons mbr-section-btn"><Link
-              className="btn btn-md mbr-bold btn-primary-outline display-7" to="/register">créer un compte</Link></div>
+            {this.props.authentication.authenticated ? (
+              <div className="navbar-buttons mbr-section-btn"><Link
+                className="btn btn-md mbr-bold btn-primary-outline display-7" to="/register">console</Link></div>
+            ) : (
+              <React.Fragment>
+                <div className="navbar-buttons mbr-section-btn"><Link
+                  className="btn btn-md mbr-bold btn-primary-outline display-7" to="/register">créer un compte</Link></div>
+                <div className="navbar-buttons mbr-section-btn"><Link
+                  className="btn btn-md mbr-bold btn-primary-outline display-7" to="/login">connexion</Link></div>
+              </React.Fragment>
+            )}
           </div>
         </amp-sidebar>
         <section className="menu1 menu horizontal-menu cid-r9hYnpdbBm" id="menu1-1">
@@ -61,13 +75,34 @@ class NavigationBar extends Component {
                     <Link className="nav-link mbr-bold link text-black display-7" to="/news">News</Link>
                   </li>
                 </ul>
-                <div className="navbar-buttons mbr-section-btn">
-                  <Link
-                    className="btn btn-md mbr-bold btn-primary-outline display-7"
-                    to="/register">
-                    créer un compte
-                  </Link>
-                </div>
+                {
+                  this.props.authentication.authenticated ? (
+                    <div className="navbar-buttons mbr-section-btn">
+                      <Link
+                        className="btn btn-md mbr-bold btn-primary-outline display-7"
+                        to="/register">
+                        CONSOLE
+                      </Link>
+                    </div>
+                  ) : (
+                    <React.Fragment>
+                      <div className="navbar-buttons mbr-section-btn">
+                        <Link
+                          className="btn btn-md mbr-bold btn-primary-outline display-7"
+                          to="/register">
+                          créer un compte
+                        </Link>
+                      </div>
+                      <div className="navbar-buttons mbr-section-btn">
+                        <Link
+                          className="btn btn-md mbr-bold btn-primary-outline display-7"
+                          to="/login">
+                          Connexion
+                        </Link>
+                      </div>
+                    </React.Fragment>
+                  )
+                }
               </div>
               <button on="tap:sidebar.toggle" className="ampstart-btn hamburger">
                 <span/>
@@ -83,4 +118,4 @@ class NavigationBar extends Component {
   }
 }
 
-export default NavigationBar
+export default connect(mapStateToProps)(NavigationBar)
