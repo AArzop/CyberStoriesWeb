@@ -12,7 +12,7 @@ class RegisterForm extends Component {
       <AutoForm
         url={'/rest-auth/registration/'}
         method={'POST'}
-        buttonDisplayText={'Register'}
+        buttonDisplayText={'VALIDER'}
         fields={[
           {
             name: 'username',
@@ -40,9 +40,9 @@ class RegisterForm extends Component {
           },
           {
             name: 'password2',
-            displayName: 'Password confirm',
+            displayName: 'Confirm password',
             initialValue: '',
-            placeholder: 'Password confirm',
+            placeholder: 'Confirm password',
             type: 'password',
             clientSideValidation: combineValidators([
               required,
@@ -51,7 +51,7 @@ class RegisterForm extends Component {
           }
         ]}
         onSubmitted={() => {
-          this.props.history.push('/accounts/register/done/')
+          this.props.history.push('/')
         }}
       />
     )

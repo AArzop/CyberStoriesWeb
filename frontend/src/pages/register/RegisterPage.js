@@ -30,11 +30,6 @@ class RegisterPage extends Component {
             <div className="mbr-row mbr-jc-c">
               <div data-form-type="formoid" className="mbr-col-lg-7">
                 <RegisterForm/>
-                <div className="align-center">
-                  <button type="submit" className="btn btn-primary btn-form display-4">
-                    Valider
-                  </button>
-                </div>
               </div>
             </div>
           </div>

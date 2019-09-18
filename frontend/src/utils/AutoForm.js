@@ -73,9 +73,9 @@ class AutoForm extends Component {
                 </ul>}
               </div>
             ))}
-            <div className={this.props.classes.buttonWrapper}>
+            <div className={`align-center`}>
               <button type={'submit'} disabled={isSubmitting}
-                className={'btn btn-dark'}>{this.props.buttonDisplayText}
+                className={'btn btn-primary btn-form display-4'}>{this.props.buttonDisplayText}
               </button>
               {isSubmitting ? <LoadingRing size={'small'} className={'ml-1'}/> : null}
             </div>
