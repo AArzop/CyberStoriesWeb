@@ -15,6 +15,7 @@ import '../../resources/js/amp-sidebar'
 import './css/rent.css'
 import NavigationBar from '../../components/NavigationBar'
 import { Link } from 'react-router-dom'
+import Footer from '../../components/Footer'
 
 class RentPage extends Component {
   render () {
@@ -60,11 +61,13 @@ class RentPage extends Component {
                     <ul className="items-list mbr-black">
                       <li className="list-item">
                         <div className="iconfont-wrapper">
-                          <span className="item-ico amp-iconfont fa-star-o fa"><svg width="100%" height="100%"
-                                                                                    viewBox="0 0 1792 1792"
-                                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                                    fill="currentColor"><path
-                            d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"/></svg></span>
+                          <span className="item-ico amp-iconfont fa-star-o fa">
+                            <svg width="100%" height="100%"
+                                 viewBox="0 0 1792 1792"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 fill="currentColor">
+                              <path
+                                d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"/></svg></span>
                         </div>
                         <span className="item-text mbr-fonts-style display-7">Livraison en 3 jours</span>
                       </li>
@@ -91,7 +94,7 @@ class RentPage extends Component {
                     </ul>
                   </div>
                   <div className="card-button mbr-section-btn"><Link to="/rent"
-                                                                  className="btn btn-lg btn-primary display-7">LOUER</Link>
+                                                                     className="btn btn-lg btn-primary display-7">LOUER</Link>
                   </div>
                 </div>
               </div>
@@ -141,7 +144,7 @@ class RentPage extends Component {
                     </ul>
                   </div>
                   <div className="card-button mbr-section-btn"><Link to="/rent"
-                                                                  className="btn btn-lg btn-primary display-7">LOUER</Link>
+                                                                     className="btn btn-lg btn-primary display-7">LOUER</Link>
                   </div>
                 </div>
               </div>
@@ -191,7 +194,7 @@ class RentPage extends Component {
                     </ul>
                   </div>
                   <div className="card-button mbr-section-btn"><Link to="/rent"
-                                                                  className="btn btn-lg btn-primary display-7">LOUER</Link>
+                                                                     className="btn btn-lg btn-primary display-7">LOUER</Link>
                   </div>
                 </div>
               </div>
@@ -275,20 +278,7 @@ class RentPage extends Component {
             </div>
           </div>
         </section>
-        <section className="footer1 cid-r9i2fKQSx1" id="footer1-1f">
-          <div className="footer-container container">
-            <div className="mbr-row link-items mbr-jc-c mbr-fonts-style display-7">
-              <p className="mbr-text fLink mbr-px-1 mbr-white">Commandes</p><p
-              className="mbr-text fLink mbr-px-1 mbr-white"><a href="index.html#features3-2"
-                                                               className="text-white">TheSpotLight</a></p><p
-              className="mbr-text fLink mbr-px-1 mbr-white"><a href="index.html#video1-7"
-                                                               className="text-white">YouTube</a></p></div>
-            <div className="copyright mbr-px-2 mbr-flex mbr-jc-c">
-              <p className="mbr-text mbr-fonts-style mbr-white align-center display-7">© Copyright <span>2019</span>
-                <span>Cyberstories</span> - Tous droits réservés</p>
-            </div>
-          </div>
-        </section>
+        <Footer/>
       </div>
     )
   }
