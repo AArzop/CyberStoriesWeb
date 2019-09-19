@@ -32,16 +32,16 @@ class LoginForm extends Component {
         fields={[
           {
             name: 'username',
-            displayName: 'Username',
-            placeholder: 'Username',
+            displayName: 'Nom d\'utilisateur',
+            placeholder: 'Nom d\'utilisateur',
             initialValue: '',
             type: 'text',
             clientSideValidation: required
           },
           {
             name: 'password',
-            displayName: 'Password',
-            placeholder: 'Password',
+            displayName: 'Mot-de-passe',
+            placeholder: 'Mot-de-passe',
             initialValue: '',
             type: 'password',
             clientSideValidation: required

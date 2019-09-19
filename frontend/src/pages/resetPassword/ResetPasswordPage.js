@@ -13,13 +13,12 @@ import '../../resources/js/amp-lightbox-gallery'
 import '../../resources/js/amp-mustache'
 import '../../resources/js/amp-sidebar'
 
-import './css/login.css'
 import NavigationBar from '../../components/NavigationBar'
 import Footer from '../../components/footer/Footer'
-import LoginForm from '../../forms/LoginForm'
 import { Link } from 'react-router-dom'
+import PasswordResetForm from '../../forms/PasswordResetForm'
 
-class LoginPage extends Component {
+class ResetPasswordPage extends Component {
   render () {
     return (
       <div className="d-flex flex-column height-100vh">
@@ -27,26 +26,13 @@ class LoginPage extends Component {
         <section className="form1 cid-rBWI8btg16 flex-grow-1" id="form1-23">
           <div className="container align-center mbr-white">
             <div className="title-wrap">
-              <h1 className="mbr-section-title mbr-fonts-style display-2"><strong>Se connecter</strong></h1>
+              <h1 className="mbr-section-title mbr-fonts-style display-2"><strong>Mot-de-passe oublié</strong></h1>
             </div>
             <div className="mbr-row mbr-jc-c">
               <div data-form-type="formoid" className="mbr-col-lg-7">
-                <LoginForm/>
+                <PasswordResetForm/>
               </div>
             </div>
-            <p className="card-text mbr-fonts-style mbr-pt-2 display-7">
-              <Link to="/reset-password"
-                    className="text-primary">
-                Mot-de-passe oublié
-              </Link>
-            </p>
-            <p className="card-text mbr-fonts-style mbr-pt-2 display-7">
-              Pas de compte ?<span> </span>
-              <Link to="/register"
-                    className="text-primary">
-                Créer un compte
-              </Link>
-            </p>
           </div>
         </section>
         <Footer/>
@@ -55,4 +41,4 @@ class LoginPage extends Component {
   }
 }
 
-export default LoginPage
+export default ResetPasswordPage

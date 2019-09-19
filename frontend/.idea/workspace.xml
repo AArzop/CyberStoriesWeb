@@ -5,21 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fb6c4dd-be81-42bf-8741-c52aba4c8fb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/changePassword/ChangePasswordPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/notFound/NotFoundPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/profile/ProfilePage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/profile/css/profile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/resetPassword/ResetPasswordPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/webpack-stats.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/webpack-stats.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/bundles/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/bundles/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/authentication.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/authentication.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NavigationBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/forms/ChangePasswordForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/forms/ChangePasswordForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/forms/LoginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/forms/LoginForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/forms/PasswordResetForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/forms/PasswordResetForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/forms/RegisterForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/forms/RegisterForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/NotFoundPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/news/NewsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/news/NewsPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/panes/NotfoundPane.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducer/authentication.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducer/authentication.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/LoginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profile/ProfilePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/ProfilePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/AutoForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/AutoForm.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +98,7 @@
       <workItem from="1568753532776" duration="651000" />
       <workItem from="1568797149200" duration="4382000" />
       <workItem from="1568882933314" duration="4723000" />
-      <workItem from="1568898327304" duration="5792000" />
+      <workItem from="1568898327304" duration="8329000" />
     </task>
     <servers />
   </component>

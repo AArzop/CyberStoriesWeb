@@ -120,15 +120,15 @@ export default compose(
   withStyles(styles)
 )(AutoForm)
 
-export const required = (value) => value && value.length > 0 ? [] : ['This field is required']
+export const required = (value) => value && value.length > 0 ? [] : ['Ce champ est requis']
 export const minimalLength = minimalLength => value => (
-  value && value.length >= minimalLength ? [] : [`This field must be at least ${minimalLength} characters long`]
+  value && value.length >= minimalLength ? [] : [`Ce champs doit comporter au moins ${minimalLength} caractères`]
 )
 export const validEmail = value => (
-  value && settings.EMAIL_REGEX.test(value.toLowerCase()) ? [] : ['This email is not valid']
+  value && settings.EMAIL_REGEX.test(value.toLowerCase()) ? [] : ['Cet email n\'est pas valide']
 )
 export const sameAs = (otherFieldName, errorMessage) => (value, values) => (
-  value === values[otherFieldName] ? [] : [errorMessage || 'This field is different']
+  value === values[otherFieldName] ? [] : [errorMessage || 'Ce champ est différent']
 )
 
 export const combineValidators = validators => (value, values) => {

@@ -23,9 +23,9 @@ class PasswordResetForm extends Component {
           }
         ]}
         onSubmitted={() => {
-          this.props.history.push('/accounts/password_reset/done/')
+          this.props.history.push('/')
         }}
-        buttonDisplayText={'Reset password'}
+        buttonDisplayText={'Valider'}
       />
     )
   }

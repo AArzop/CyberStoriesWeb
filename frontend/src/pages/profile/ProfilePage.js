@@ -21,6 +21,10 @@ import { post } from '../../utils/fetch'
 import { LOGOUT } from '../../actions/authentication'
 import { connect } from 'react-redux'
 
+const mapStateToProps = state => ({
+  authentication: state.authentication
+})
+
 class ProfilePage extends Component {
   constructor (props) {
     super(props)
@@ -45,8 +49,8 @@ class ProfilePage extends Component {
                 <strong>Profil</strong>
               </h1>
             </div>
-            <h3 className="mbr-fonts-style display-5">{USERNAME}</h3>
-            <h3 className="mbr-fonts-style display-5">{EMAIL}</h3>
+            <h3 className="mbr-fonts-style display-5">{this.props.authentication.username}</h3>
+            <h3 className="mbr-fonts-style display-5">{this.props.authentication.email}</h3>
             <p className="mt-5"><Link className="btn btn-md btn-primary display-7" to={'/change-password'}>
               Changer de mot de passe</Link></p>
             <p><Link className="btn btn-md btn-primary display-7" to={'/'} onClick={this.handleClick}>Déconnexion</Link>
@@ -59,4 +63,4 @@ class ProfilePage extends Component {
   }
 }
 
-export default connect()(ProfilePage)
+export default connect(mapStateToProps)(ProfilePage)

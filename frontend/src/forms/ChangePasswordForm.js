@@ -15,33 +15,33 @@ class ChangePasswordForm extends Component {
         onSubmitted={() => {
           this.props.history.push('/')
         }}
-        buttonDisplayText={'Change password'}
+        buttonDisplayText={'Valider'}
         fields={[
           {
             name: 'old_password',
-            displayName: 'Old password',
-            placeholder: 'Old password',
+            displayName: 'Ancien mot-de-passe',
+            placeholder: 'Ancien mot-de-passe',
             initialValue: '',
             type: 'password',
             clientSideValidation: required
           },
           {
             name: 'new_password1',
-            displayName: 'New password',
-            placeholder: 'New password',
+            displayName: 'Nouveau mot-de-passe',
+            placeholder: 'Nouveau mot-de-passe',
             initialValue: '',
             type: 'password',
             clientSideValidation: required
           },
           {
             name: 'new_password2',
-            displayName: 'New password confirm',
-            placeholder: 'New password confirm',
+            displayName: 'Nouveau mot-de-passe',
+            placeholder: 'Nouveau mot-de-passe',
             initialValue: '',
             type: 'password',
             clientSideValidation: combineValidators([
               required,
-              sameAs('new_password1', 'The password is different')
+              sameAs('new_password1', 'Les mots-de-passe sont différents')
             ])
           }
         ]}

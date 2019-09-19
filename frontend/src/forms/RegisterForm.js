@@ -16,8 +16,8 @@ class RegisterForm extends Component {
         fields={[
           {
             name: 'username',
-            displayName: 'Username',
-            placeholder: 'Username',
+            displayName: 'Nom d\'utilisateur',
+            placeholder: 'Nom d\'utilisateur',
             initialValue: '',
             type: 'text',
             clientSideValidation: required
@@ -32,21 +32,21 @@ class RegisterForm extends Component {
           },
           {
             name: 'password1',
-            displayName: 'Password',
-            placeholder: 'Password',
+            displayName: 'Mot-de-passe',
+            placeholder: 'Mot-de-passe',
             initialValue: '',
             type: 'password',
             clientSideValidation: minimalLength(8)
           },
           {
             name: 'password2',
-            displayName: 'Confirm password',
+            displayName: 'Confirmer le mot-de-passe',
             initialValue: '',
-            placeholder: 'Confirm password',
+            placeholder: 'Confirmer le mot-de-passe',
             type: 'password',
             clientSideValidation: combineValidators([
               required,
-              sameAs('password1', 'Confirmed password is different')
+              sameAs('password1', 'Le mot-de-passe confirmé est différent')
             ])
           }
         ]}
