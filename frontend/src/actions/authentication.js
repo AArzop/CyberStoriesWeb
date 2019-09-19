@@ -2,6 +2,7 @@ import { withAjaxStoreData } from '../hocs/async'
 import { SET_AJAX_ERROR, SET_AJAX_RESPONSE } from './actions'
 
 export const AUTHENTICATE = 'AUTHENTICATE'
+export const LOGOUT = 'LOGOUT'
 
 const profileId = 'profile'
 

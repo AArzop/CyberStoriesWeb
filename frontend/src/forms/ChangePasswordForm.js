@@ -13,7 +13,7 @@ class ChangePasswordForm extends Component {
         url={'/rest-auth/password/change/'}
         method={'POST'}
         onSubmitted={() => {
-          this.props.history.push('/accounts/password_change/done/')
+          this.props.history.push('/')
         }}
         buttonDisplayText={'Change password'}
         fields={[

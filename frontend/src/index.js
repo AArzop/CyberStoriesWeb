@@ -7,11 +7,9 @@ import '../lib/bootstrap/css/bootstrap.min.css'
 import IndexPage from './pages/index/IndexPage'
 import DownloadPage from './pages/download/DownloadPage'
 import LeaderboardPage from './pages/LeaderboardPage'
-import NotFoundPage from './pages/NotFoundPage'
 import GameResultVisiblePage from './pages/GameResultVisiblePage'
 import LoginPage from './pages/login/LoginPage'
-import ProfilePage from './pages/ProfilePage'
-import PasswordChangePage from './pages/PasswordChangePage'
+import ProfilePage from './pages/profile/ProfilePage'
 import PasswordChangeDonePage from './pages/PasswordChangeDonePage'
 import PasswordResetPage from './pages/PasswordResetPage'
 import PasswordResetDonePage from './pages/PasswordResetDonePage'
@@ -28,6 +26,7 @@ import { ParallaxProvider } from 'react-scroll-parallax'
 import RentPage from './pages/rent/RentPage'
 import ArticlePage from './pages/article/ArticlePage'
 import ScrollToTop from './components/ScrollToTop'
+import ChangePasswordPage from './pages/changePassword/ChangePasswordPage'
 
 class App extends Component {
   render () {
@@ -47,10 +46,10 @@ class App extends Component {
                 <Route exact path={'/gameresult_visible/'} component={GameResultVisiblePage}/>
                 <Route exact path={'/login/'} component={LoginPage}/>
                 <Route exact path={'/register/'} component={RegisterPage}/>
-                <Route exact path={'/accounts/profile/'} component={ProfilePage}/>
+                <Route exact path={'/profile/'} component={ProfilePage}/>
                 <Route exact path={'/accounts/logout/'} component={IndexPage}/>
                 <Route exact path={'/accounts/password_change/done/'} component={PasswordChangeDonePage}/>
-                <Route exact path={'/accounts/password_change/'} component={PasswordChangePage}/>
+                <Route exact path={'/change-password'} component={ChangePasswordPage}/>
                 <Route exact path={'/accounts/password_reset/done/'} component={PasswordResetDonePage}/>
                 <Route exact path={'/accounts/password_reset/'} component={PasswordResetPage}/>
                 <Route exact path={'/accounts/reset/:uid64/:token/'} component={PasswordResetConfirmPage}/>
@@ -59,7 +58,7 @@ class App extends Component {
                 <Route exact path={'/game_master/write_email/'} component={GameMasterWriteEmailPage}/>
                 <Route exact path={'/game_master/:token/'} component={GameMasterPage}/>
                 <Route exact path={'/'} component={IndexPage}/>
-                <Route component={NotFoundPage}/>
+                <Route component={IndexPage}/>
               </Switch>
             </ScrollToTop>
           </Router>

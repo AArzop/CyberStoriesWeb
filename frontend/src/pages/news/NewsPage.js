@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import '../../resources/css/layout.css'
 import '../../resources/css/amp.css'
 import '../../resources/css/amp-form.css'
 import '../../resources/css/amp-lightbox-gallery.css'
@@ -20,7 +21,7 @@ import Footer from '../../components/footer/Footer'
 class NewsPage extends Component {
   render () {
     return (
-      <div>
+      <div className="d-flex flex-column height-100vh">
         <NavigationBar/>
         <section className="title1 cid-rBWFdKsqJW" id="title1-1t">
           <div className="mbr-overlay"/>
@@ -232,8 +233,7 @@ class NewsPage extends Component {
             </div>
           </div>
         </section>
-        <section className="info2 cid-rBWHbrAjlB" id="info2-20">
-          {/*Block parameters controls (Blue "Gear" panel) */}
+        <section className="info2 cid-rBWHbrAjlB flex-grow-1" id="info2-20">
           <div className="container">
             <div className="mbr-row mbr-jc-c">
               <div className="title-wrap mbr-col-lg-8 mbr-col-md-8 mbr-col-sm-12 mbr-flex mbr-column mbr-jc-c">
