@@ -78,11 +78,11 @@ class NavigationBar extends Component {
                 {
                   this.props.authentication.authenticated ? (
                     <div className="navbar-buttons mbr-section-btn">
-                      <Link
+                      <Link33
                         className="btn btn-md mbr-bold btn-primary-outline display-7"
                         to="/register">
                         CONSOLE
-                      </Link>
+                      </Link33>
                     </div>
                   ) : (
                     <React.Fragment>

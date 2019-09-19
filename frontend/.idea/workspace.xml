@@ -5,15 +5,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fb6c4dd-be81-42bf-8741-c52aba4c8fb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/reducer/authentication.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/emmanuel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/css/layout.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/webpack-stats.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/webpack-stats.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/bundles/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/bundles/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/authentication.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/authentication.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NavigationBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/forms/LoginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/forms/LoginForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducer/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducer/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/BasicLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/BasicLayout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AdsPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ArticlesPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/DocumentationPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/DownloadPage2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/EntrepriseCreateAccountPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/LoginPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/PasswordPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/RegisterDonePage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/VirusPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/WifiPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/article/ArticlePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/article/ArticlePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/download/DownloadPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/download/DownloadPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/IndexPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/IndexPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/LoginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/news/NewsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/news/NewsPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/register/RegisterPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/register/RegisterPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/rent/RentPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/rent/RentPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/try/TryPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/try/TryPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/panes/AdsPane.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/panes/DownloadPane.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/panes/EntrepriseCreateAccountPane.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/panes/FooterPane.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/panes/GameResultVisiblePane.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/panes/HeaderPane.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/panes/IndexPane.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/panes/NavigationBarPane.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/panes/PasswordPane.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/panes/PresentationPane.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/panes/RegisterDonePane.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/panes/RegisterPane.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/panes/VirusPane.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/panes/WifiPane.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +72,7 @@
   <component name="ProjectId" id="1QudWrjsmdVmHOI4iL12rXtueac" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/login" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -51,16 +84,16 @@
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/pages/register/css/register.css" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/pages/login" />
-      <recent name="$PROJECT_DIR$/src/pages/login/css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/footer" />
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/src/pages/index/images" />
       <recent name="$PROJECT_DIR$/src/pages/index" />
       <recent name="$PROJECT_DIR$/src/pages/index/css" />
-      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/login" />
+      <recent name="$PROJECT_DIR$/src/pages/login/css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -89,7 +122,8 @@
       <workItem from="1568624468401" duration="25711000" />
       <workItem from="1568729064028" duration="165000" />
       <workItem from="1568753532776" duration="651000" />
-      <workItem from="1568797149200" duration="4318000" />
+      <workItem from="1568797149200" duration="4382000" />
+      <workItem from="1568882933314" duration="2771000" />
     </task>
     <servers />
   </component>

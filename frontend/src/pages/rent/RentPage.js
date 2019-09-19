@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import '../../resources/css/layout.css'
 import '../../resources/css/amp.css'
 import '../../resources/css/amp-form.css'
 import '../../resources/css/amp-lightbox-gallery.css'
@@ -15,12 +16,12 @@ import '../../resources/js/amp-sidebar'
 import './css/rent.css'
 import NavigationBar from '../../components/NavigationBar'
 import { Link } from 'react-router-dom'
-import Footer from '../../components/Footer'
+import Footer from '../../components/footer/Footer'
 
 class RentPage extends Component {
   render () {
     return (
-      <div>
+      <div className="d-flex flex-column height-100vh">
         <NavigationBar/>
         <section className="title1 cid-rBTdh5s0Xo" id="title1-1m">
           <div className="mbr-overlay"/>
@@ -217,7 +218,7 @@ class RentPage extends Component {
             </div>
           </div>
         </section>
-        <section className="contacts7 map cid-rBWElaCIqv" id="contacts7-1p">
+        <section className="contacts7 map cid-rBWElaCIqv flex-grow-1" id="contacts7-1p">
           <div className="container">
             <div className="title mbr-pb-4 align-center">
               <h3 className="mbr-section-title mbr-bold mbr-fonts-style display-2">Nous contacter</h3>

@@ -23,7 +23,7 @@ import office3 from './images/office3.png'
 import web from './images/web.png'
 import { Link } from 'react-router-dom'
 import NavigationBar from '../../components/NavigationBar'
-import Footer from '../../components/Footer'
+import Footer from '../../components/footer/Footer'
 
 class IndexPage extends Component {
   render () {

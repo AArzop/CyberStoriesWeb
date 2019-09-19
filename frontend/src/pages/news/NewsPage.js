@@ -15,7 +15,7 @@ import '../../resources/js/amp-sidebar'
 import './css/news.css'
 import NavigationBar from '../../components/NavigationBar'
 import { Link } from 'react-router-dom'
-import Footer from '../../components/Footer'
+import Footer from '../../components/footer/Footer'
 
 class NewsPage extends Component {
   render () {

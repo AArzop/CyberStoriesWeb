@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import '../../resources/css/layout.css'
 import '../../resources/css/amp.css'
 import '../../resources/css/amp-form.css'
 import '../../resources/css/amp-lightbox-gallery.css'
@@ -14,16 +15,16 @@ import '../../resources/js/amp-sidebar'
 
 import './css/register.css'
 import NavigationBar from '../../components/NavigationBar'
-import Footer from '../../components/Footer'
+import Footer from '../../components/footer/Footer'
 import RegisterForm from '../../forms/RegisterForm'
 import { Link } from 'react-router-dom'
 
 class RegisterPage extends Component {
   render () {
     return (
-      <div>
+      <div className="d-flex flex-column height-100vh">
         <NavigationBar/>
-        <section className="form1 cid-rBWI8btg16" id="form1-23">
+        <section className="form1 cid-rBWI8btg16 flex-grow-1" id="form1-23">
           <div className="container align-center mbr-white">
             <div className="title-wrap">
               <h1 className="mbr-section-title mbr-fonts-style display-2"><strong>Créer un compte</strong></h1>

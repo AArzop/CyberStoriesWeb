@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+import '../../resources/css/layout.css'
 import '../../resources/css/amp.css'
 import '../../resources/css/amp-form.css'
 import '../../resources/css/amp-lightbox-gallery.css'
@@ -16,12 +17,12 @@ import '../../resources/js/amp-sidebar'
 import './css/download.css'
 import NavigationBar from '../../components/NavigationBar'
 import { Link } from 'react-router-dom'
-import Footer from '../../components/Footer'
+import Footer from '../../components/footer/Footer'
 
 class DownloadPage extends Component {
   render () {
     return (
-      <div>
+      <div className="d-flex flex-column height-100vh">
         <NavigationBar/>
         <section className="title1 cid-rBXIsLKtrc" id="title1-2y">
           {/* Block parameters controls (Blue "Gear" panel) */}
@@ -192,7 +193,7 @@ class DownloadPage extends Component {
             </div>
           </div>
         </section>
-        <section className="content2 cid-rBZ3zNmdl9" id="content2-3d">
+        <section className="content2 cid-rBZ3zNmdl9 flex-grow-1" id="content2-3d">
           <div className="container">
             <div className="mbr-row">
               <div className="image mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-6">

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import '../../resources/css/layout.css'
 import '../../resources/css/amp.css'
 import '../../resources/css/amp-form.css'
 import '../../resources/css/amp-lightbox-gallery.css'
