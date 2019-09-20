@@ -5,20 +5,64 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fb6c4dd-be81-42bf-8741-c52aba4c8fb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/resetPassword/ResetPasswordPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/webpack-stats.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/webpack-stats.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/bundles/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/bundles/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavigationBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/forms/ChangePasswordForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/forms/ChangePasswordForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/authentication.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/authentication.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ArticleHeader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ArticleInfo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ArticleSection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ArticleWarning.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AuthenticationLinks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CarouselWithSlider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EmailThumbnail.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FeatureCard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GameResult.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GameResult.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/IndexPresentationCards.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/InnerFooter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LanguageSelectionDropdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Leaderboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Leaderboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavigationBarLink.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavigationBarLinkGroup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavigationBarSubLink.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavigationBarSubLinkGroup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchInput.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/FacebookLink.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/GrowingBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GrowingBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/LeaderboardRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeaderboardRow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/LoadingRing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoadingRing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/LoginRegisterLinks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/PitchTitle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/ProfileDropDown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/TwitterLink.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/buttons.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/forms/LoginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/forms/LoginForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/forms/PasswordResetForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/forms/PasswordResetForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/forms/RegisterForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/forms/RegisterForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hocs/async.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hocs/async.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/login/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/LoginPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/ProfilePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/ProfilePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/PasswordChangeDonePage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/PasswordChangePage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/PasswordResetCompletePage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/PasswordResetConfirmPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/PasswordResetDonePage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/PasswordResetPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ProfilePage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/RegisterPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/panes/GameMasterEmailsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/panes/GameMasterEmailsList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/panes/GameMasterSentEmailsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/panes/GameMasterSentEmailsList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/panes/LeaderboardPane.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/panes/LeaderboardPane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/panes/LoginPane.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/panes/PasswordChangeDonePane.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/panes/PasswordChangePane.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/panes/PasswordResetCompletePane.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/panes/PasswordResetConfirmPane.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/panes/PasswordResetDonePane.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/panes/PasswordResetPane.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/panes/ProfilePane.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/AutoForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/AutoForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/components/Leaderboard.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/components/Leaderboard.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/elements/LeaderboardRow.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/elements/LeaderboardRow.test.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,11 +107,11 @@
       <recent name="$PROJECT_DIR$/src/pages/login/css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/components/footer" />
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/src/pages/index/images" />
       <recent name="$PROJECT_DIR$/src/pages/index" />
-      <recent name="$PROJECT_DIR$/src/pages/index/css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -98,7 +142,7 @@
       <workItem from="1568753532776" duration="651000" />
       <workItem from="1568797149200" duration="4382000" />
       <workItem from="1568882933314" duration="4723000" />
-      <workItem from="1568898327304" duration="8329000" />
+      <workItem from="1568898327304" duration="10238000" />
     </task>
     <servers />
   </component>

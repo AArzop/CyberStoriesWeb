@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import Leaderboard from '../components/Leaderboard'
 import withStyles from 'react-jss'
 import classNames from 'classnames'
-import PitchTitle from '../elements/PitchTitle'
 
 const styles = {
   wrapper: {
@@ -16,7 +15,7 @@ class LeaderboardPane extends Component {
     return (
       <div className={classNames('m-4 w-75 mx-auto', this.props.classes.wrapper)}>
         <br/>
-        <PitchTitle className={'text-center'}>Leaderboard</PitchTitle>
+        <h1 className={'text-center'}>Leaderboard</h1>
         <br/>
         <Leaderboard/>
       </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import { Leaderboard } from '../../src/components/Leaderboard'
 import renderer from 'react-test-renderer'
 import { MemoryRouter } from 'react-router-dom'
-import LeaderboardRow from '../../src/elements/LeaderboardRow'
+import LeaderboardRow from '../../src/components/LeaderboardRow'
 
 test('if leaderboard sends right entry to rows', () => {
   const leaderboardEntriesMock = [

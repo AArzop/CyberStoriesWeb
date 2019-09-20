@@ -1,9 +1,9 @@
-import LeaderboardRow from '../../src/elements/LeaderboardRow'
+import LeaderboardRow from '../../src/components/LeaderboardRow'
 import React from 'react'
 import { MemoryRouter } from 'react-router'
 import { NavLink } from 'react-router-dom'
 import renderer from 'react-test-renderer'
-import GrowingBar from '../../src/elements/GrowingBar'
+import GrowingBar from '../../src/components/GrowingBar'
 
 test('if leaderboard row prints right data from props', () => {
   const entryMock = {

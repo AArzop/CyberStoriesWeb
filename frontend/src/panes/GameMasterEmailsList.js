@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import withStyles from 'react-jss'
 import { compose } from 'redux'
-import EmailThumbnail from '../components/EmailThumbnail'
 import { withGameMasterEmails } from '../actions/gamemaster'
 
 const styles = {}
@@ -11,7 +10,7 @@ class GameMasterEmailsList extends Component {
     return (
       <div className={'mr-2'}>
         {this.props.emails.map(email => (
-          <EmailThumbnail email={email} key={email.id} className={'my-2'}/>
+          <div key={email.id} className={'my-2'}>{email}</div>
         ))}
       </div>
     )

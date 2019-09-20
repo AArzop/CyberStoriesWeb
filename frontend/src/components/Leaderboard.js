@@ -4,7 +4,7 @@ import withStyles from 'react-jss'
 import classNames from 'classnames'
 import { compose } from 'redux'
 import { withLeaderboardEntries, withWebsocketLeaderboardEntries } from '../actions/leaderboard'
-import LeaderboardRow from '../elements/LeaderboardRow'
+import LeaderboardRow from './LeaderboardRow'
 
 const styles = {
   cell: {

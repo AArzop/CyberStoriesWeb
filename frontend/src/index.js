@@ -10,11 +10,7 @@ import LeaderboardPage from './pages/LeaderboardPage'
 import GameResultVisiblePage from './pages/GameResultVisiblePage'
 import LoginPage from './pages/login/LoginPage'
 import ProfilePage from './pages/profile/ProfilePage'
-import PasswordChangeDonePage from './pages/PasswordChangeDonePage'
 import ResetPasswordPage from './pages/resetPassword/ResetPasswordPage'
-import PasswordResetDonePage from './pages/PasswordResetDonePage'
-import PasswordResetConfirmPage from './pages/PasswordResetConfirmPage'
-import PasswordResetCompletePage from './pages/PasswordResetCompletePage'
 import GameMasterTokenPage from './pages/GameMasterTokenPage'
 import RegisterPage from './pages/register/RegisterPage'
 import GameMasterPage from './pages/GameMasterPage'
@@ -48,12 +44,8 @@ class App extends Component {
                 <Route exact path={'/register/'} component={RegisterPage}/>
                 <Route exact path={'/profile/'} component={ProfilePage}/>
                 <Route exact path={'/accounts/logout/'} component={IndexPage}/>
-                <Route exact path={'/accounts/password_change/done/'} component={PasswordChangeDonePage}/>
                 <Route exact path={'/change-password'} component={ChangePasswordPage}/>
-                <Route exact path={'/accounts/password_reset/done/'} component={PasswordResetDonePage}/>
                 <Route exact path={'/reset-password/'} component={ResetPasswordPage}/>
-                <Route exact path={'/accounts/reset/:uid64/:token/'} component={PasswordResetConfirmPage}/>
-                <Route exact path={'/accounts/reset/done/'} component={PasswordResetCompletePage}/>
                 <Route exact path={'/game_master/token/'} component={GameMasterTokenPage}/>
                 <Route exact path={'/game_master/write_email/'} component={GameMasterWriteEmailPage}/>
                 <Route exact path={'/game_master/:token/'} component={GameMasterPage}/>

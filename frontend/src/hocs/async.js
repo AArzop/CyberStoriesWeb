@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { fetchAjaxStoreData, updateAjaxStoreData } from '../actions/actions'
-import LoadingRing from '../elements/LoadingRing'
+import LoadingRing from '../components/LoadingRing'
 
 export const withAjaxStoreData = (id, url, config = {}) => (WrappedComponent) => {
   const mapStateToProps = state => ({

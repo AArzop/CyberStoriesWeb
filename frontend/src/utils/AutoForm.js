@@ -4,7 +4,7 @@ import { compose } from 'redux'
 import { Field, Form, Formik } from 'formik'
 import { fetchBase } from './fetch'
 import classNames from 'classnames'
-import LoadingRing from '../elements/LoadingRing'
+import LoadingRing from '../components/LoadingRing'
 import settings from '../settings'
 
 const styles = {
