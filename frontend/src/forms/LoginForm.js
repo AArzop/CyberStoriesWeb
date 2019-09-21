@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import withStyles from 'react-jss'
 import { compose } from 'redux'
-import { get } from '../utils/fetch'
+import { get } from '@exifers/fetch-utils'
 import { AUTHENTICATE } from '../actions/authentication'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'

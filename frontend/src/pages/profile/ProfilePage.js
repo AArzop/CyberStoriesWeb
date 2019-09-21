@@ -17,7 +17,7 @@ import Footer from '../../components/footer/Footer'
 import './css/profile.css'
 import NavigationBar from '../../components/NavigationBar'
 import { Link } from 'react-router-dom'
-import { post } from '../../utils/fetch'
+import { post } from '@exifers/fetch-utils'
 import { LOGOUT } from '../../actions/authentication'
 import { connect } from 'react-redux'
 

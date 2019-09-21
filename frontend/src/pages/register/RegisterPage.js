@@ -18,6 +18,7 @@ import NavigationBar from '../../components/NavigationBar'
 import Footer from '../../components/footer/Footer'
 import RegisterForm from '../../forms/RegisterForm'
 import { Link } from 'react-router-dom'
+import FacebookLoginButton from '../../components/socialLoginButtons/FacebookLoginButton'
 
 class RegisterPage extends Component {
   render () {
@@ -29,6 +30,12 @@ class RegisterPage extends Component {
             <div className="title-wrap">
               <h1 className="mbr-section-title mbr-fonts-style display-2"><strong>Créer un compte</strong></h1>
             </div>
+            <div className="mbr-row mbr-jc-c mb-4">
+              <div data-form-type="formoid" className="mbr-col-lg-7">
+                <FacebookLoginButton/>
+              </div>
+            </div>
+            <h6 className="mbr-section-subtitle mbr-fonts-style display-5 mb-4">Ou</h6>
             <div className="mbr-row mbr-jc-c">
               <div data-form-type="formoid" className="mbr-col-lg-7">
                 <RegisterForm/>

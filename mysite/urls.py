@@ -15,6 +15,7 @@ urlpatterns = [
     path('rest-auth/', include('rest_auth.urls')),
     path('rest-auth/facebook/', FacebookLogin.as_view(), name='fb_login'),
     path('rest-auth/twitter/', TwitterLogin.as_view(), name='twitter_login'),
+    path('accounts/', include('allauth.urls')),
     # this url is used to generate email content
     re_path('password-reset/confirm/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$',
         RedirectView.as_view(url='/', permanent=True),
