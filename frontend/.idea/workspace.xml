@@ -5,20 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fb6c4dd-be81-42bf-8741-c52aba4c8fb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/socialLoginButtons/FacebookLoginButton.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/webpack-stats.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/webpack-stats.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/bundles/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/bundles/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/forms/LoginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/forms/LoginForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/login/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/LoginPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/ProfilePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/ProfilePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/register/RegisterPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/register/RegisterPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/AutoForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/AutoForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/fetch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mysite/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +34,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/socialButtons" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../npm/fetch-utils" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -100,7 +87,8 @@
       <workItem from="1568797149200" duration="4382000" />
       <workItem from="1568882933314" duration="4723000" />
       <workItem from="1568898327304" duration="22089000" />
-      <workItem from="1569059236183" duration="4408000" />
+      <workItem from="1569059236183" duration="6410000" />
+      <workItem from="1569403175258" duration="18000" />
     </task>
     <servers />
   </component>
