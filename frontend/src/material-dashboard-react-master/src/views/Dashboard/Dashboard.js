@@ -6,6 +6,8 @@ import { makeStyles } from '@material-ui/core/styles'
 import Icon from '@material-ui/core/Icon'
 // @material-ui/icons
 import Store from '@material-ui/icons/Store'
+import Backup from '@material-ui/icons/Backup'
+import Info from '@material-ui/icons/Info'
 import Warning from '@material-ui/icons/Warning'
 import DateRange from '@material-ui/icons/DateRange'
 import LocalOffer from '@material-ui/icons/LocalOffer'
@@ -50,7 +52,7 @@ export default function Dashboard () {
           <Card>
             <CardHeader color="warning" stats icon>
               <CardIcon color="warning">
-                <Icon>content_copy</Icon>
+                <Backup/>
               </CardIcon>
               <p className={classes.cardCategory}>Used Space</p>
               <h3 className={classes.cardTitle}>
@@ -90,7 +92,7 @@ export default function Dashboard () {
           <Card>
             <CardHeader color="danger" stats icon>
               <CardIcon color="danger">
-                <Icon>info_outline</Icon>
+                <Info/>
               </CardIcon>
               <p className={classes.cardCategory}>Fixed Issues</p>
               <h3 className={classes.cardTitle}>75</h3>

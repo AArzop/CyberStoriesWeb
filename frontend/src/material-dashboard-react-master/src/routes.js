@@ -32,7 +32,6 @@ import Typography from 'material-dashboard-react-master/src/views/Typography/Typ
 import Icons from 'material-dashboard-react-master/src/views/Icons/Icons.js'
 import Maps from 'material-dashboard-react-master/src/views/Maps/Maps.js'
 import NotificationsPage from 'material-dashboard-react-master/src/views/Notifications/Notifications.js'
-import UpgradeToPro from 'material-dashboard-react-master/src/views/UpgradeToPro/UpgradeToPro.js'
 // core components/views for RTL layout
 import RTLPage from 'material-dashboard-react-master/src/views/RTLPage/RTLPage.js'
 
@@ -47,7 +46,7 @@ const dashboardRoutes = [
   },
   {
     path: '/user',
-    name: 'User Profile',
+    name: 'Company',
     rtlName: 'ملف تعريفي للمستخدم',
     icon: Person,
     component: UserProfile,
@@ -55,7 +54,7 @@ const dashboardRoutes = [
   },
   {
     path: '/table',
-    name: 'Table List',
+    name: 'Leaderboard',
     rtlName: 'قائمة الجدول',
     icon: 'content_paste',
     component: TableList,
@@ -63,7 +62,7 @@ const dashboardRoutes = [
   },
   {
     path: '/typography',
-    name: 'Typography',
+    name: 'Orders',
     rtlName: 'طباعة',
     icon: LibraryBooks,
     component: Typography,
@@ -71,7 +70,7 @@ const dashboardRoutes = [
   },
   {
     path: '/icons',
-    name: 'Icons',
+    name: 'Game Master',
     rtlName: 'الرموز',
     icon: BubbleChart,
     component: Icons,
@@ -91,22 +90,6 @@ const dashboardRoutes = [
     rtlName: 'إخطارات',
     icon: Notifications,
     component: NotificationsPage,
-    layout: '/admin'
-  },
-  {
-    path: '/rtl-page',
-    name: 'RTL Support',
-    rtlName: 'پشتیبانی از راست به چپ',
-    icon: Language,
-    component: RTLPage,
-    layout: '/rtl'
-  },
-  {
-    path: '/upgrade-to-pro',
-    name: 'Upgrade To PRO',
-    rtlName: 'التطور للاحترافية',
-    icon: Unarchive,
-    component: UpgradeToPro,
     layout: '/admin'
   }
 ]
