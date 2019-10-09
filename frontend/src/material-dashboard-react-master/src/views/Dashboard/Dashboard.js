@@ -43,7 +43,6 @@ const useStyles = makeStyles(styles)
 
 export default function Dashboard () {
   const classes = useStyles()
-  const a = <div>Hi</div>
   return (
     <div>
       <GridContainer>

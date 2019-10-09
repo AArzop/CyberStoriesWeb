@@ -43,14 +43,14 @@ class LoginPage extends Component {
             </div>
             <p className="card-text mbr-fonts-style mbr-pt-2 display-7">
               <Link to="/reset-password"
-                    className="text-primary">
+                className="text-primary">
                 Mot-de-passe oublié
               </Link>
             </p>
             <p className="card-text mbr-fonts-style mbr-pt-2 display-7">
               Pas de compte ?<span> </span>
               <Link to="/register"
-                    className="text-primary">
+                className="text-primary">
                 Créer un compte
               </Link>
             </p>

@@ -15,7 +15,6 @@ import '../../resources/js/amp-sidebar'
 
 import NavigationBar from '../../components/NavigationBar'
 import Footer from '../../components/footer/Footer'
-import { Link } from 'react-router-dom'
 import PasswordResetForm from '../../forms/PasswordResetForm'
 
 class ResetPasswordPage extends Component {

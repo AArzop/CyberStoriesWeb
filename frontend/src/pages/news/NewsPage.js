@@ -42,13 +42,13 @@ class NewsPage extends Component {
                 <div className="card-wrapper mbr-column">
                   <div className="card-img mbr-flex">
                     <amp-img src="https://app.8b.io/app/themes/webamp/components/_images/background1.jpg"
-                             layout="responsive" width={348} height={232} alt="" class="placeholder-loader">
+                      layout="responsive" width={348} height={232} alt="" class="placeholder-loader">
                       <div placeholder className="placeholder">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                           <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
-                                  strokeDashoffset={230} cx={150} cy={150} r={145}/>
+                            strokeDashoffset={230} cx={150} cy={150} r={145}/>
                           <circle className="small" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={212}
-                                  cx={150} cy={150} r={135}/>
+                            cx={150} cy={150} r={135}/>
                         </svg>
                       </div>
                     </amp-img>
@@ -59,7 +59,7 @@ class NewsPage extends Component {
                     <p className="card-text mbr-fonts-style mbr-pt-2 display-7">Click on the text in the block to select
                       it and enter the text you want to show. Click on the image to set another one.</p>
                     <div className="card-btn mbr-section-btn mbr-pt-2"><Link className="btn btn-primary display-7"
-                                                                          to="/article">Read More</Link></div>
+                      to="/article">Read More</Link></div>
                   </div>
                 </div>
               </div>
@@ -67,13 +67,13 @@ class NewsPage extends Component {
                 <div className="card-wrapper mbr-column">
                   <div className="card-img mbr-flex">
                     <amp-img src="https://app.8b.io/app/themes/webamp/components/_images/background5.jpg"
-                             layout="responsive" width={348} height={232} alt="" class="placeholder-loader">
+                      layout="responsive" width={348} height={232} alt="" class="placeholder-loader">
                       <div placeholder className="placeholder">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                           <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
-                                  strokeDashoffset={230} cx={150} cy={150} r={145}/>
+                            strokeDashoffset={230} cx={150} cy={150} r={145}/>
                           <circle className="small" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={212}
-                                  cx={150} cy={150} r={135}/>
+                            cx={150} cy={150} r={135}/>
                         </svg>
                       </div>
                     </amp-img>
@@ -84,7 +84,7 @@ class NewsPage extends Component {
                     <p className="card-text mbr-fonts-style mbr-pt-2 display-7">Click on the text in the block to select
                       it and enter the text you want to show. Click on the image to set another one.</p>
                     <div className="card-btn mbr-section-btn mbr-pt-2"><Link className="btn btn-primary display-7"
-                                                                          to="/article">Read More</Link></div>
+                      to="/article">Read More</Link></div>
                   </div>
                 </div>
               </div>
@@ -92,14 +92,14 @@ class NewsPage extends Component {
                 <div className="card-wrapper mbr-column">
                   <div className="card-img mbr-flex">
                     <amp-img src="https://app.8b.io/app/themes/webamp/components/_images/background6.jpg"
-                             layout="responsive" width="348.5446009389671" height={232} alt=""
-                             class="placeholder-loader">
+                      layout="responsive" width="348.5446009389671" height={232} alt=""
+                      class="placeholder-loader">
                       <div placeholder className="placeholder">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                           <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
-                                  strokeDashoffset={230} cx={150} cy={150} r={145}/>
+                            strokeDashoffset={230} cx={150} cy={150} r={145}/>
                           <circle className="small" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={212}
-                                  cx={150} cy={150} r={135}/>
+                            cx={150} cy={150} r={135}/>
                         </svg>
                       </div>
                     </amp-img>
@@ -110,7 +110,7 @@ class NewsPage extends Component {
                     <p className="card-text mbr-fonts-style mbr-pt-2 display-7">Click on the text in the block to select
                       it and enter the text you want to show. Click on the image to set another one.</p>
                     <div className="card-btn mbr-section-btn mbr-pt-2"><Link className="btn btn-primary display-7"
-                                                                          to="/">Read More</Link></div>
+                      to="/">Read More</Link></div>
                   </div>
                 </div>
               </div>
@@ -127,13 +127,13 @@ class NewsPage extends Component {
                 <div className="card-wrapper mbr-flex">
                   <div className="card-img mbr-flex mbr-col-md-12 mbr-col-lg-6">
                     <amp-img src="https://app.8b.io/app/themes/webamp/components/_images/background1.jpg"
-                             layout="responsive" width={567} height={378} alt="" class="placeholder-loader">
+                      layout="responsive" width={567} height={378} alt="" class="placeholder-loader">
                       <div placeholder className="placeholder">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                           <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
-                                  strokeDashoffset={230} cx={150} cy={150} r={145}/>
+                            strokeDashoffset={230} cx={150} cy={150} r={145}/>
                           <circle className="small" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={212}
-                                  cx={150} cy={150} r={135}/>
+                            cx={150} cy={150} r={135}/>
                         </svg>
                       </div>
                     </amp-img>
@@ -144,7 +144,7 @@ class NewsPage extends Component {
                     <p className="card-text mbr-fonts-style mbr-pt-2 display-7">Click on the text in the block to select
                       it and enter the text you want to show. Click on the image to set another one.</p>
                     <div className="card-btn mbr-section-btn mbr-pt-2"><Link className="btn btn-primary display-7"
-                                                                          to="/article">Read More</Link></div>
+                      to="/article">Read More</Link></div>
                   </div>
                 </div>
               </div>
@@ -161,13 +161,13 @@ class NewsPage extends Component {
                 <div className="card-wrapper mbr-column">
                   <div className="card-img mbr-flex">
                     <amp-img src="https://app.8b.io/app/themes/webamp/components/_images/background1.jpg"
-                             layout="responsive" width={348} height={232} alt="" class="placeholder-loader">
+                      layout="responsive" width={348} height={232} alt="" class="placeholder-loader">
                       <div placeholder className="placeholder">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                           <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
-                                  strokeDashoffset={230} cx={150} cy={150} r={145}/>
+                            strokeDashoffset={230} cx={150} cy={150} r={145}/>
                           <circle className="small" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={212}
-                                  cx={150} cy={150} r={135}/>
+                            cx={150} cy={150} r={135}/>
                         </svg>
                       </div>
                     </amp-img>
@@ -177,7 +177,7 @@ class NewsPage extends Component {
                     <p className="card-text mbr-fonts-style mbr-pt-2 display-7">Click on the text in the block to select
                       it and enter the text you want to show. Click on the image to set another one.</p>
                     <div className="card-btn mbr-section-btn mbr-pt-2"><Link className="btn btn-primary display-7"
-                                                                          to="/article">Read More</Link></div>
+                      to="/article">Read More</Link></div>
                   </div>
                 </div>
               </div>
@@ -185,13 +185,13 @@ class NewsPage extends Component {
                 <div className="card-wrapper mbr-column">
                   <div className="card-img mbr-flex">
                     <amp-img src="https://app.8b.io/app/themes/webamp/components/_images/background5.jpg"
-                             layout="responsive" width={348} height={232} alt="" class="placeholder-loader">
+                      layout="responsive" width={348} height={232} alt="" class="placeholder-loader">
                       <div placeholder className="placeholder">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                           <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
-                                  strokeDashoffset={230} cx={150} cy={150} r={145}/>
+                            strokeDashoffset={230} cx={150} cy={150} r={145}/>
                           <circle className="small" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={212}
-                                  cx={150} cy={150} r={135}/>
+                            cx={150} cy={150} r={135}/>
                         </svg>
                       </div>
                     </amp-img>
@@ -201,7 +201,7 @@ class NewsPage extends Component {
                     <p className="card-text mbr-fonts-style mbr-pt-2 display-7">Click on the text in the block to select
                       it and enter the text you want to show. Click on the image to set another one.</p>
                     <div className="card-btn mbr-section-btn mbr-pt-2"><Link className="btn btn-primary display-7"
-                                                                          to="/article">Read More</Link></div>
+                      to="/article">Read More</Link></div>
                   </div>
                 </div>
               </div>
@@ -209,14 +209,14 @@ class NewsPage extends Component {
                 <div className="card-wrapper mbr-column">
                   <div className="card-img mbr-flex">
                     <amp-img src="https://app.8b.io/app/themes/webamp/components/_images/background6.jpg"
-                             layout="responsive" width="348.5446009389671" height={232} alt=""
-                             class="placeholder-loader">
+                      layout="responsive" width="348.5446009389671" height={232} alt=""
+                      class="placeholder-loader">
                       <div placeholder className="placeholder">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                           <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
-                                  strokeDashoffset={230} cx={150} cy={150} r={145}/>
+                            strokeDashoffset={230} cx={150} cy={150} r={145}/>
                           <circle className="small" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={212}
-                                  cx={150} cy={150} r={135}/>
+                            cx={150} cy={150} r={135}/>
                         </svg>
                       </div>
                     </amp-img>
@@ -226,7 +226,7 @@ class NewsPage extends Component {
                     <p className="card-text mbr-fonts-style mbr-pt-2 display-7">Click on the text in the block to select
                       it and enter the text you want to show. Click on the image to set another one.</p>
                     <div className="card-btn mbr-section-btn mbr-pt-2"><Link className="btn btn-primary display-7"
-                                                                          to="/article">Read More</Link></div>
+                      to="/article">Read More</Link></div>
                   </div>
                 </div>
               </div>
@@ -242,14 +242,14 @@ class NewsPage extends Component {
                   dernières nouveautés et des informations sur des réductions possibles.</p>
               </div>
               <div className="form-wrap mbr-col-lg-4 mbr-col-md-4 mbr-col-sm-12 mbr-flex mbr-column mbr-jc-c"
-                   data-form-type="formoid">
+                data-form-type="formoid">
                 <div className="form-block" data-form-type="formoid">
                   <form className="mbr-form mbr-jc-c mbr-flex mbr-m-auto mbr-column" method="post" target="_top"
-                        action-xhr="https://formoid.net/api/amp-form/push" data-form-title="8b Form"><input
-                    type="hidden" name="siteid" data-form-siteid="true" defaultValue={59453}/><input type="hidden"
-                                                                                                     name="email"
-                                                                                                     data-form-email="true"
-                                                                                                     defaultValue="qUDd97HlUG918RMaKmUBJ73PgHNm9aKw4lEhB4HS94hzRfvv21r4YlaS/WbWjePaqIhIk61Wcz9cOO0ar04jb6EoZt8H7w8QazKPfDNu5RC318meIH77S5knlSwqoiUT"/>
+                    action-xhr="https://formoid.net/api/amp-form/push" data-form-title="8b Form"><input
+                      type="hidden" name="siteid" data-form-siteid="true" defaultValue={59453}/><input type="hidden"
+                      name="email"
+                      data-form-email="true"
+                      defaultValue="qUDd97HlUG918RMaKmUBJ73PgHNm9aKw4lEhB4HS94hzRfvv21r4YlaS/WbWjePaqIhIk61Wcz9cOO0ar04jb6EoZt8H7w8QazKPfDNu5RC318meIH77S5knlSwqoiUT"/>
                     <div className="mbr-overlay"/>
                     <div submit-success>
                       <template data-form-alert type="amp-mustache"/>
@@ -260,7 +260,7 @@ class NewsPage extends Component {
                     <div className="fieldset">
                       <div className="field">
                         <input type="email" name="form[data][0][1]" data-form-field="E-mail" placeholder="E-mail"
-                               required id="form[data][0][1]-info2-20"/>
+                          required id="form[data][0][1]-info2-20"/>
                       </div>
                       <div className="mbr-section-btn align-center">
                         <button type="submit" className="btn btn-primary btn-form display-7">Subscribe</button>

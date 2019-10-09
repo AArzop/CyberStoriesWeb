@@ -44,7 +44,7 @@ class RegisterPage extends Component {
             <p className="card-text mbr-fonts-style mbr-pt-2 display-7">
               Déjà un compte ? <span> </span>
               <Link to="/login"
-                    className="text-primary">
+                className="text-primary">
                 Se connecter
               </Link>
             </p>

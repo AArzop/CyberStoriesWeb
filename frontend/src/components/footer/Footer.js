@@ -28,7 +28,7 @@ class Footer extends Component {
             </p>
             <p className="mbr-text fLink mbr-px-1 mbr-white">
               <a href="index.html#video1-7"
-                 className="text-white">
+                className="text-white">
                 YouTube
               </a>
             </p>

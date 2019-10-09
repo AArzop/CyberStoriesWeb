@@ -6,10 +6,10 @@ var Chartist = require('chartist')
 // ##############################
 // // // variables used to create animation on charts
 // #############################
-var delays = 80,
-  durations = 500
-var delays2 = 80,
-  durations2 = 500
+var delays = 80
+var durations = 500
+var delays2 = 80
+var durations2 = 500
 
 // ##############################
 // // // Daily Sales

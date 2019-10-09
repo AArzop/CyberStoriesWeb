@@ -43,8 +43,8 @@ class ArticlePage extends Component {
                   nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
                   reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                   cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  <br/>
-                  <br/>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                <br/>
+                <br/>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
                   totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
                   sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
                   consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
@@ -53,7 +53,7 @@ class ArticlePage extends Component {
                   exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
                   autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel
                   illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-                  <br/></p>
+                <br/></p>
               </div>
             </div>
           </div>
@@ -63,14 +63,14 @@ class ArticlePage extends Component {
             <div className="mbr-row">
               <div className="image mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-6">
                 <amp-img src="https://app.8b.io/app/themes/webamp/components/_images/background2.jpg"
-                         layout="responsive" width="506.2952646239554" height={284} alt=""
-                         class="placeholder-loader">
+                  layout="responsive" width="506.2952646239554" height={284} alt=""
+                  class="placeholder-loader">
                   <div placeholder className="placeholder">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                       <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
-                              strokeDashoffset={230} cx={150} cy={150} r={145}/>
+                        strokeDashoffset={230} cx={150} cy={150} r={145}/>
                       <circle className="small" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={212}
-                              cx={150} cy={150} r={135}/>
+                        cx={150} cy={150} r={135}/>
                     </svg>
                   </div>
                 </amp-img>
@@ -91,10 +91,10 @@ class ArticlePage extends Component {
               <div className="icon align-left">
                 <div className="iconfont-wrapper">
                   <span className="amp-iconfont fa-quote-left fa"><svg width="100%" height="100%"
-                                                                       viewBox="0 0 1792 1792"
-                                                                       xmlns="http://www.w3.org/2000/svg"
-                                                                       fill="currentColor"><path
-                    d="M832 960v384q0 80-56 136t-136 56h-384q-80 0-136-56t-56-136v-704q0-104 40.5-198.5t109.5-163.5 163.5-109.5 198.5-40.5h64q26 0 45 19t19 45v128q0 26-19 45t-45 19h-64q-106 0-181 75t-75 181v32q0 40 28 68t68 28h224q80 0 136 56t56 136zm896 0v384q0 80-56 136t-136 56h-384q-80 0-136-56t-56-136v-704q0-104 40.5-198.5t109.5-163.5 163.5-109.5 198.5-40.5h64q26 0 45 19t19 45v128q0 26-19 45t-45 19h-64q-106 0-181 75t-75 181v32q0 40 28 68t68 28h224q80 0 136 56t56 136z"/></svg></span>
+                    viewBox="0 0 1792 1792"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"><path
+                      d="M832 960v384q0 80-56 136t-136 56h-384q-80 0-136-56t-56-136v-704q0-104 40.5-198.5t109.5-163.5 163.5-109.5 198.5-40.5h64q26 0 45 19t19 45v128q0 26-19 45t-45 19h-64q-106 0-181 75t-75 181v32q0 40 28 68t68 28h224q80 0 136 56t56 136zm896 0v384q0 80-56 136t-136 56h-384q-80 0-136-56t-56-136v-704q0-104 40.5-198.5t109.5-163.5 163.5-109.5 198.5-40.5h64q26 0 45 19t19 45v128q0 26-19 45t-45 19h-64q-106 0-181 75t-75 181v32q0 40 28 68t68 28h224q80 0 136 56t56 136z"/></svg></span>
                 </div>
               </div>
               <p className="mbr-text mbr-black mbr-fonts-style mbr-py-2 display-5">8b Web Builder is one of the easiest
@@ -103,10 +103,10 @@ class ArticlePage extends Component {
               <div className="icon align-right">
                 <div className="iconfont-wrapper">
                   <span className="amp-iconfont fa-quote-right fa"><svg width="100%" height="100%"
-                                                                        viewBox="0 0 1792 1792"
-                                                                        xmlns="http://www.w3.org/2000/svg"
-                                                                        fill="currentColor"><path
-                    d="M832 320v704q0 104-40.5 198.5t-109.5 163.5-163.5 109.5-198.5 40.5h-64q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h64q106 0 181-75t75-181v-32q0-40-28-68t-68-28h-224q-80 0-136-56t-56-136v-384q0-80 56-136t136-56h384q80 0 136 56t56 136zm896 0v704q0 104-40.5 198.5t-109.5 163.5-163.5 109.5-198.5 40.5h-64q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h64q106 0 181-75t75-181v-32q0-40-28-68t-68-28h-224q-80 0-136-56t-56-136v-384q0-80 56-136t136-56h384q80 0 136 56t56 136z"/></svg></span>
+                    viewBox="0 0 1792 1792"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"><path
+                      d="M832 320v704q0 104-40.5 198.5t-109.5 163.5-163.5 109.5-198.5 40.5h-64q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h64q106 0 181-75t75-181v-32q0-40-28-68t-68-28h-224q-80 0-136-56t-56-136v-384q0-80 56-136t136-56h384q80 0 136 56t56 136zm896 0v704q0 104-40.5 198.5t-109.5 163.5-163.5 109.5-198.5 40.5h-64q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h64q106 0 181-75t75-181v-32q0-40-28-68t-68-28h-224q-80 0-136-56t-56-136v-384q0-80 56-136t136-56h384q80 0 136 56t56 136z"/></svg></span>
                 </div>
               </div>
             </div>
@@ -117,14 +117,14 @@ class ArticlePage extends Component {
             <div className="mbr-row mbr-row-reverse">
               <div className="image mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-6">
                 <amp-img src="https://app.8b.io/app/themes/webamp/components/_images/background2.jpg"
-                         layout="responsive" width="506.2952646239554" height={284} alt=""
-                         class="placeholder-loader">
+                  layout="responsive" width="506.2952646239554" height={284} alt=""
+                  class="placeholder-loader">
                   <div placeholder className="placeholder">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
                       <circle className="big" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={230}
-                              strokeDashoffset={230} cx={150} cy={150} r={145}/>
+                        strokeDashoffset={230} cx={150} cy={150} r={145}/>
                       <circle className="small" fill="none" stroke="#c2e0e0" strokeWidth={3} strokeDasharray={212}
-                              cx={150} cy={150} r={135}/>
+                        cx={150} cy={150} r={135}/>
                     </svg>
                   </div>
                 </amp-img>
@@ -148,8 +148,8 @@ class ArticlePage extends Component {
                   nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
                   reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                   cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  <br/>
-                  <br/>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                <br/>
+                <br/>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
                   totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
                   sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
                   consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
@@ -158,7 +158,7 @@ class ArticlePage extends Component {
                   exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
                   autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel
                   illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-                  <br/></p>
+                <br/></p>
               </div>
             </div>
           </div>
