@@ -1,145 +1,145 @@
 /*eslint-disable*/
-import React from "react";
+import React from 'react'
 // nodejs library to set properties for components
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types'
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from '@material-ui/core/styles'
 // @material-ui/icons
-import AddAlert from "@material-ui/icons/AddAlert";
+import AddAlert from '@material-ui/icons/AddAlert'
 // core components
-import GridItem from "components/Grid/GridItem.js";
-import GridContainer from "components/Grid/GridContainer.js";
-import Button from "components/CustomButtons/Button.js";
-import SnackbarContent from "components/Snackbar/SnackbarContent.js";
-import Snackbar from "components/Snackbar/Snackbar.js";
-import Card from "components/Card/Card.js";
-import CardHeader from "components/Card/CardHeader.js";
-import CardBody from "components/Card/CardBody.js";
+import GridItem from 'components/Grid/GridItem.js'
+import GridContainer from 'components/Grid/GridContainer.js'
+import Button from 'components/CustomButtons/Button.js'
+import SnackbarContent from 'components/Snackbar/SnackbarContent.js'
+import Snackbar from 'components/Snackbar/Snackbar.js'
+import Card from 'components/Card/Card.js'
+import CardHeader from 'components/Card/CardHeader.js'
+import CardBody from 'components/Card/CardBody.js'
 
 const styles = {
   cardCategoryWhite: {
-    "&,& a,& a:hover,& a:focus": {
-      color: "rgba(255,255,255,.62)",
-      margin: "0",
-      fontSize: "14px",
-      marginTop: "0",
-      marginBottom: "0"
+    '&,& a,& a:hover,& a:focus': {
+      color: 'rgba(255,255,255,.62)',
+      margin: '0',
+      fontSize: '14px',
+      marginTop: '0',
+      marginBottom: '0'
     },
-    "& a,& a:hover,& a:focus": {
-      color: "#FFFFFF"
+    '& a,& a:hover,& a:focus': {
+      color: '#FFFFFF'
     }
   },
   cardTitleWhite: {
-    color: "#FFFFFF",
-    marginTop: "0px",
-    minHeight: "auto",
-    fontWeight: "300",
-    fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
-    marginBottom: "3px",
-    textDecoration: "none",
-    "& small": {
-      color: "#777",
-      fontSize: "65%",
-      fontWeight: "400",
-      lineHeight: "1"
+    color: '#FFFFFF',
+    marginTop: '0px',
+    minHeight: 'auto',
+    fontWeight: '300',
+    fontFamily: '\'Roboto\', \'Helvetica\', \'Arial\', sans-serif',
+    marginBottom: '3px',
+    textDecoration: 'none',
+    '& small': {
+      color: '#777',
+      fontSize: '65%',
+      fontWeight: '400',
+      lineHeight: '1'
     }
   }
-};
+}
 
-const useStyles = makeStyles(styles);
+const useStyles = makeStyles(styles)
 
-export default function Notifications() {
-  const classes = useStyles();
-  const [tl, setTL] = React.useState(false);
-  const [tc, setTC] = React.useState(false);
-  const [tr, setTR] = React.useState(false);
-  const [bl, setBL] = React.useState(false);
-  const [bc, setBC] = React.useState(false);
-  const [br, setBR] = React.useState(false);
+export default function Notifications () {
+  const classes = useStyles()
+  const [tl, setTL] = React.useState(false)
+  const [tc, setTC] = React.useState(false)
+  const [tr, setTR] = React.useState(false)
+  const [bl, setBL] = React.useState(false)
+  const [bc, setBC] = React.useState(false)
+  const [br, setBR] = React.useState(false)
   React.useEffect(() => {
     // Specify how to clean up after this effect:
-    return function cleanup() {
+    return function cleanup () {
       // to stop the warning of calling setState of unmounted component
-      var id = window.setTimeout(null, 0);
+      var id = window.setTimeout(null, 0)
       while (id--) {
-        window.clearTimeout(id);
+        window.clearTimeout(id)
       }
-    };
-  });
+    }
+  })
   const showNotification = place => {
     switch (place) {
-      case "tl":
+      case 'tl':
         if (!tl) {
-          setTL(true);
-          setTimeout(function() {
-            setTL(false);
-          }, 6000);
+          setTL(true)
+          setTimeout(function () {
+            setTL(false)
+          }, 6000)
         }
-        break;
-      case "tc":
+        break
+      case 'tc':
         if (!tc) {
-          setTC(true);
-          setTimeout(function() {
-            setTC(false);
-          }, 6000);
+          setTC(true)
+          setTimeout(function () {
+            setTC(false)
+          }, 6000)
         }
-        break;
-      case "tr":
+        break
+      case 'tr':
         if (!tr) {
-          setTR(true);
-          setTimeout(function() {
-            setTR(false);
-          }, 6000);
+          setTR(true)
+          setTimeout(function () {
+            setTR(false)
+          }, 6000)
         }
-        break;
-      case "bl":
+        break
+      case 'bl':
         if (!bl) {
-          setBL(true);
-          setTimeout(function() {
-            setBL(false);
-          }, 6000);
+          setBL(true)
+          setTimeout(function () {
+            setBL(false)
+          }, 6000)
         }
-        break;
-      case "bc":
+        break
+      case 'bc':
         if (!bc) {
-          setBC(true);
-          setTimeout(function() {
-            setBC(false);
-          }, 6000);
+          setBC(true)
+          setTimeout(function () {
+            setBC(false)
+          }, 6000)
         }
-        break;
-      case "br":
+        break
+      case 'br':
         if (!br) {
-          setBR(true);
-          setTimeout(function() {
-            setBR(false);
-          }, 6000);
+          setBR(true)
+          setTimeout(function () {
+            setBR(false)
+          }, 6000)
         }
-        break;
+        break
       default:
-        break;
+        break
     }
-  };
+  }
   return (
     <Card>
       <CardHeader color="primary">
         <h4 className={classes.cardTitleWhite}>Notifications</h4>
         <p className={classes.cardCategoryWhite}>
-          Handcrafted by our friends from{" "}
+          Handcrafted by our friends from{' '}
           <a
             target="_blank"
             href="https://material-ui-next.com/?ref=creativetime"
           >
             Material UI
-          </a>{" "}
-          and styled by{" "}
+          </a>{' '}
+          and styled by{' '}
           <a
             target="_blank"
             href="https://www.creative-tim.com/?ref=mdr-notifications-page"
           >
             Creative Tim
           </a>
-          . Please checkout the{" "}
+          . Please checkout the{' '}
           <a href="#pablo" target="_blank">
             full documentation
           </a>
@@ -150,20 +150,20 @@ export default function Notifications() {
         <GridContainer>
           <GridItem xs={12} sm={12} md={6}>
             <h5>Notifications Style</h5>
-            <br />
-            <SnackbarContent message={"This is a plain notification"} />
+            <br/>
+            <SnackbarContent message={'This is a plain notification'}/>
             <SnackbarContent
-              message={"This is a notification with close button."}
+              message={'This is a notification with close button.'}
               close
             />
             <SnackbarContent
-              message={"This is a notification with close button and icon."}
+              message={'This is a notification with close button and icon.'}
               close
               icon={AddAlert}
             />
             <SnackbarContent
               message={
-                "This is a notification with close button and icon and have many lines. You can see that the icon and the close button are always vertically aligned. This is a beautiful notification. So you don't have to worry about the style."
+                'This is a notification with close button and icon and have many lines. You can see that the icon and the close button are always vertically aligned. This is a beautiful notification. So you don\'t have to worry about the style.'
               }
               close
               icon={AddAlert}
@@ -171,7 +171,7 @@ export default function Notifications() {
           </GridItem>
           <GridItem xs={12} sm={12} md={6}>
             <h5>Notifications States</h5>
-            <br />
+            <br/>
             <SnackbarContent
               message={
                 'INFO - This is a regular notification made with color="info"'
@@ -209,13 +209,13 @@ export default function Notifications() {
             />
           </GridItem>
         </GridContainer>
-        <br />
-        <br />
+        <br/>
+        <br/>
         <GridContainer justify="center">
-          <GridItem xs={12} sm={12} md={6} style={{ textAlign: "center" }}>
+          <GridItem xs={12} sm={12} md={6} style={{ textAlign: 'center' }}>
             <h5>
               Notifications Places
-              <br />
+              <br/>
               <small>Click to view notifications</small>
             </h5>
           </GridItem>
@@ -227,7 +227,7 @@ export default function Notifications() {
                 <Button
                   fullWidth
                   color="primary"
-                  onClick={() => showNotification("tl")}
+                  onClick={() => showNotification('tl')}
                 >
                   Top Left
                 </Button>
@@ -245,7 +245,7 @@ export default function Notifications() {
                 <Button
                   fullWidth
                   color="primary"
-                  onClick={() => showNotification("tc")}
+                  onClick={() => showNotification('tc')}
                 >
                   Top Center
                 </Button>
@@ -263,7 +263,7 @@ export default function Notifications() {
                 <Button
                   fullWidth
                   color="primary"
-                  onClick={() => showNotification("tr")}
+                  onClick={() => showNotification('tr')}
                 >
                   Top Right
                 </Button>
@@ -280,14 +280,14 @@ export default function Notifications() {
             </GridContainer>
           </GridItem>
         </GridContainer>
-        <GridContainer justify={"center"}>
+        <GridContainer justify={'center'}>
           <GridItem xs={12} sm={12} md={10} lg={8}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={4}>
                 <Button
                   fullWidth
                   color="primary"
-                  onClick={() => showNotification("bl")}
+                  onClick={() => showNotification('bl')}
                 >
                   Bottom Left
                 </Button>
@@ -305,7 +305,7 @@ export default function Notifications() {
                 <Button
                   fullWidth
                   color="primary"
-                  onClick={() => showNotification("bc")}
+                  onClick={() => showNotification('bc')}
                 >
                   Bottom Center
                 </Button>
@@ -323,7 +323,7 @@ export default function Notifications() {
                 <Button
                   fullWidth
                   color="primary"
-                  onClick={() => showNotification("br")}
+                  onClick={() => showNotification('br')}
                 >
                   Bottom Right
                 </Button>
@@ -342,5 +342,5 @@ export default function Notifications() {
         </GridContainer>
       </CardBody>
     </Card>
-  );
+  )
 }
