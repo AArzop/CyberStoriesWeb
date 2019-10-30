@@ -116,7 +116,7 @@ export default function Dashboard () {
                 <LocalPostOffice/>
               </CardIcon>
               <p className={classes.cardCategory}>Orders</p>
-              <h3 className={classes.cardTitle}>+245</h3>
+              <h3 className={classes.cardTitle}>{numberWithCommas(245)}</h3>
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
