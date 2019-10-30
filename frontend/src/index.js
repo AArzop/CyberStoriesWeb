@@ -39,6 +39,7 @@ class App extends Component {
                 <Route exact path={'/news/'} component={NewsPage}/>
                 <Route exact path={'/article/'} component={ArticlePage}/>
                 <Route exact path={'/console/'} component={DashboardPage}/>
+                <Route       path={'/admin/'} component={DashboardPage}/>
                 /* TODO move */
                 <Route exact path={'/leaderboard/'} component={LeaderboardPage}/>
                 <Route exact path={'/leaderboard/:playerId/'} component={PlayerDetailsPage}/>

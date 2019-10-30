@@ -18,6 +18,10 @@ import Accessibility from '@material-ui/icons/Accessibility'
 import BugReport from '@material-ui/icons/BugReport'
 import Code from '@material-ui/icons/Code'
 import Cloud from '@material-ui/icons/Cloud'
+import BarChart from '@material-ui/icons/BarChart'
+import LocalPostOffice from '@material-ui/icons/LocalPostOffice'
+import VideogameAsset from '@material-ui/icons/VideogameAsset'
+import People from '@material-ui/icons/People'
 // core components
 import GridItem from 'components/Grid/GridItem.js'
 import GridContainer from 'components/Grid/GridContainer.js'
@@ -41,6 +45,10 @@ import {
 
 import styles from 'assets/jss/material-dashboard-react/views/dashboardStyle.js'
 
+function numberWithCommas (x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+}
+
 const useStyles = makeStyles(styles)
 
 export default function Dashboard () {
@@ -52,21 +60,17 @@ export default function Dashboard () {
           <Card>
             <CardHeader color="warning" stats icon>
               <CardIcon color="warning">
-                <Backup/>
+                <VideogameAsset/>
               </CardIcon>
-              <p className={classes.cardCategory}>Used Space</p>
+              <p className={classes.cardCategory}>Games played</p>
               <h3 className={classes.cardTitle}>
-                49/50 <small>GB</small>
+                {numberWithCommas(49850)}
               </h3>
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
-                <Danger>
-                  <Warning/>
-                </Danger>
-                <a href="#pablo" onClick={e => e.preventDefault()}>
-                  Get more space
-                </a>
+                <DateRange/>
+                As of {new Date().getFullYear()}
               </div>
             </CardFooter>
           </Card>
@@ -92,15 +96,15 @@ export default function Dashboard () {
           <Card>
             <CardHeader color="danger" stats icon>
               <CardIcon color="danger">
-                <Info/>
+                <People/>
               </CardIcon>
-              <p className={classes.cardCategory}>Fixed Issues</p>
-              <h3 className={classes.cardTitle}>75</h3>
+              <p className={classes.cardCategory}>Visitors</p>
+              <h3 className={classes.cardTitle}>{numberWithCommas(37543)}</h3>
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
-                <LocalOffer/>
-                Tracked from Github
+                <DateRange/>
+                As of {new Date().getFullYear()}
               </div>
             </CardFooter>
           </Card>
@@ -109,9 +113,9 @@ export default function Dashboard () {
           <Card>
             <CardHeader color="info" stats icon>
               <CardIcon color="info">
-                <Accessibility/>
+                <LocalPostOffice/>
               </CardIcon>
-              <p className={classes.cardCategory}>Followers</p>
+              <p className={classes.cardCategory}>Orders</p>
               <h3 className={classes.cardTitle}>+245</h3>
             </CardHeader>
             <CardFooter stats>
@@ -164,12 +168,12 @@ export default function Dashboard () {
               />
             </CardHeader>
             <CardBody>
-              <h4 className={classes.cardTitle}>Email Subscriptions</h4>
+              <h4 className={classes.cardTitle}>Enterprise account creations</h4>
               <p className={classes.cardCategory}>Last Campaign Performance</p>
             </CardBody>
             <CardFooter chart>
               <div className={classes.stats}>
-                <AccessTime/> campaign sent 2 days ago
+                <AccessTime/> updated 4 minutes ago
               </div>
             </CardFooter>
           </Card>
@@ -186,12 +190,12 @@ export default function Dashboard () {
               />
             </CardHeader>
             <CardBody>
-              <h4 className={classes.cardTitle}>Completed Tasks</h4>
+              <h4 className={classes.cardTitle}>Completed Games</h4>
               <p className={classes.cardCategory}>Last Campaign Performance</p>
             </CardBody>
             <CardFooter chart>
               <div className={classes.stats}>
-                <AccessTime/> campaign sent 2 days ago
+                <AccessTime/> updated 4 minutes ago
               </div>
             </CardFooter>
           </Card>
@@ -200,11 +204,11 @@ export default function Dashboard () {
       <GridContainer>
         <GridItem xs={12} sm={12} md={6}>
           <CustomTabs
-            title="Tasks:"
+            title="Events:"
             headerColor="primary"
             tabs={[
               {
-                tabName: 'Bugs',
+                tabName: 'Phishing',
                 tabIcon: BugReport,
                 tabContent: (
                   <Tasks
@@ -215,7 +219,7 @@ export default function Dashboard () {
                 )
               },
               {
-                tabName: 'Website',
+                tabName: 'Office',
                 tabIcon: Code,
                 tabContent: (
                   <Tasks
@@ -226,7 +230,7 @@ export default function Dashboard () {
                 )
               },
               {
-                tabName: 'Server',
+                tabName: 'Admin',
                 tabIcon: Cloud,
                 tabContent: (
                   <Tasks
@@ -242,20 +246,20 @@ export default function Dashboard () {
         <GridItem xs={12} sm={12} md={6}>
           <Card>
             <CardHeader color="warning">
-              <h4 className={classes.cardTitleWhite}>Employees Stats</h4>
+              <h4 className={classes.cardTitleWhite}>Leaderboard</h4>
               <p className={classes.cardCategoryWhite}>
-                New employees on 15th September, 2016
+                Best scores from 2019
               </p>
             </CardHeader>
             <CardBody>
               <Table
                 tableHeaderColor="warning"
-                tableHead={['ID', 'Name', 'Salary', 'Country']}
+                tableHead={['Rank', 'Name', 'Score', 'Company']}
                 tableData={[
-                  ['1', 'Dakota Rice', '$36,738', 'Niger'],
-                  ['2', 'Minerva Hooper', '$23,789', 'Curaçao'],
-                  ['3', 'Sage Rodriguez', '$56,142', 'Netherlands'],
-                  ['4', 'Philip Chaney', '$38,735', 'Korea, South']
+                  ['1', 'Dakota Rice', '36,738', 'Niger'],
+                  ['2', 'Minerva Hooper', '23,789', 'Curaçao'],
+                  ['3', 'Sage Rodriguez', '56,142', 'Netherlands'],
+                  ['4', 'Philip Chaney', '38,735', 'Korea, South']
                 ]}
               />
             </CardBody>
