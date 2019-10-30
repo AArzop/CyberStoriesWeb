@@ -41,7 +41,7 @@ export default function CustomTable (props) {
                 {prop.map((prop, key) => {
                   return (
                     <TableCell className={classes.tableCell} key={key}>
-                      {prop}
+                      {typeof prop === 'function' ? prop() : prop}
                     </TableCell>
                   )
                 })}

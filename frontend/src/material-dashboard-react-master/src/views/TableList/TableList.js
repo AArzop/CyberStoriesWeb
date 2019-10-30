@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles'
 // core components
@@ -8,6 +8,84 @@ import Table from 'components/Table/Table.js'
 import Card from 'components/Card/Card.js'
 import CardHeader from 'components/Card/CardHeader.js'
 import CardBody from 'components/Card/CardBody.js'
+import { compose } from 'redux'
+import { withLeaderboardEntries, withWebsocketLeaderboardEntries } from '../../../../actions/leaderboard'
+import withStyles from 'react-jss'
+import { lerpColor3 } from '../../../../utils/color'
+import classNames from 'classnames'
+
+const gbstyles = {
+  growingBar: {
+    height: '14px',
+    borderRadius: '7px'
+  },
+  wrapper: {
+    display: 'flex',
+    flexDirection: 'row'
+  }
+}
+
+class GrowingBar extends Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      width: 0
+    }
+
+    this.maxScore = 100
+
+    this.grow = this.grow.bind(this)
+  }
+
+  componentWillReceiveProps (nextProps, nextContext) {
+    this.grow(nextProps.value)
+  }
+
+  componentDidMount () {
+    this.grow(this.props.value)
+  }
+
+  grow (value) {
+    let count = 0
+    const intervalId = setInterval(() => {
+      if (this.state.width < value) {
+        this.setState(state => ({
+          width: state.width + 1
+        }))
+      }
+      if (count++ >= value) {
+        window.clearInterval(intervalId)
+      }
+    }, 1)
+  }
+
+  render () {
+    const color = lerpColor3('#e63b38', '#f6940e', '#56b05a', this.state.width / 100)
+    return (
+      <div className={classNames(this.props.classes.wrapper, this.props.className)}>
+        <div
+          className={classNames(
+            'm-1',
+            this.props.classes.growingBar
+          )}
+          style={{
+            width: this.state.width,
+            backgroundColor: color
+          }}
+        />
+        <div
+          style={{
+            color: color,
+            fontWeight: 'bold'
+          }}
+        >{this.state.width} %
+        </div>
+      </div>
+    )
+  }
+}
+
+GrowingBar = withStyles(gbstyles)(GrowingBar)
 
 const styles = {
   cardCategoryWhite: {
@@ -41,8 +119,30 @@ const styles = {
 
 const useStyles = makeStyles(styles)
 
-export default function TableList () {
+function TableList ({ leaderboardEntries }) {
   const classes = useStyles()
+
+  const nonEmptyFilter = (entry) => entry.gameResults.length > 0
+
+  const globalScoreSort = (entry1, entry2) => {
+    const globalScore1 = globalScore(entry1)
+    const globalScore2 = globalScore(entry2)
+    return globalScore1 < globalScore2 ? 1
+      : globalScore1 === globalScore2 ? 0
+        : -1
+  }
+
+  const globalScore = (entry) => (
+    Math.max(...entry.gameResults.map(
+      current => (
+        current.stage1Score +
+        current.stage2Score +
+        current.stage3Score +
+        current.stage4Score
+      )
+    )) / 4
+  )
+
   return (
     <GridContainer>
       <GridItem xs={12} sm={12} md={12}>
@@ -58,27 +158,13 @@ export default function TableList () {
           <CardBody>
             <Table
               tableHeaderColor="primary"
-              tableHead={['ID', 'Name', 'Score', 'Company', 'Date']}
-              tableData={[
-                ['1', 'Dakota Rice', '$36,738', 'Niger', 'Oud-Turnhout'],
-                ['2', 'Minerva Hooper', '$23,789', 'Curaçao', 'Sinaai-Waas'],
-                ['3', 'Sage Rodriguez', '$56,142', 'Netherlands', 'Baileux'],
-                [
-                  '4',
-                  'Philip Chaney',
-                  '$38,735',
-                  'Korea, South',
-                  'Overland Park'
-                ],
-                [
-                  '5',
-                  'Doris Greene',
-                  '$63,542',
-                  'Malawi',
-                  'Feldkirchen in Kärnten'
-                ],
-                ['6', 'Mason Porter', '$78,615', 'Chile', 'Gloucester']
-              ]}
+              tableHead={['Rank', 'Name', 'Score', 'Company', 'Date']}
+              tableData={leaderboardEntries
+                .filter(nonEmptyFilter)
+                .sort(globalScoreSort)
+                .map((entry, index) => (
+                  [index + 1, entry.pseudo, () => <GrowingBar value={globalScore(entry)}/>, 'SomeCompany', 'SomeDate']
+                ))}
             />
           </CardBody>
         </Card>
@@ -86,3 +172,9 @@ export default function TableList () {
     </GridContainer>
   )
 }
+
+export default compose(
+  withWebsocketLeaderboardEntries,
+  withLeaderboardEntries,
+  withStyles(styles)
+)(TableList)
