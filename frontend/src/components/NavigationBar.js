@@ -42,7 +42,7 @@ class NavigationBar extends Component {
             {this.props.authentication.authenticated ? (
               <React.Fragment>
                 <div className="navbar-buttons mbr-section-btn"><Link
-                  className="btn btn-md mbr-bold btn-primary-outline display-7" to="/console">console</Link>
+                  className="btn btn-md mbr-bold btn-primary-outline display-7" to="/admin/dashboard">console</Link>
                 </div>
                 <div className="navbar-buttons mbr-section-btn"><Link
                   className="btn btn-md mbr-bold btn-primary-outline display-7" to="/register">
@@ -96,7 +96,7 @@ class NavigationBar extends Component {
                       <div className="navbar-buttons mbr-section-btn">
                         <Link
                           className="btn btn-md mbr-bold btn-primary-outline display-7"
-                          to="/console">
+                          to="/admin/dashboard">
                           CONSOLE
                         </Link>
                       </div>

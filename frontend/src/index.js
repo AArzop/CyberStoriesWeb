@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import { store } from './store/store'
 import { Provider } from 'react-redux'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 import '../lib/bootstrap/css/bootstrap.min.css'
 import IndexPage from './pages/index/IndexPage'
 import DownloadPage from './pages/download/DownloadPage'
@@ -38,7 +38,6 @@ class App extends Component {
                 <Route exact path={'/try/'} component={TryPage}/>
                 <Route exact path={'/news/'} component={NewsPage}/>
                 <Route exact path={'/article/'} component={ArticlePage}/>
-                <Route exact path={'/console/'} component={DashboardPage}/>
                 <Route       path={'/admin/'} component={DashboardPage}/>
                 /* TODO move */
                 <Route exact path={'/leaderboard/'} component={LeaderboardPage}/>

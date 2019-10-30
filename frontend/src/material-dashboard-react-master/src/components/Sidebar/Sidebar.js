@@ -85,7 +85,7 @@ export default function Sidebar (props) {
   var brand = (
     <div className={classes.logo}>
       <NavLink
-        to={'/console'}
+        to={'/admin/dashboard'}
         className={classNames(classes.logoLink, {
           [classes.logoLinkRTL]: props.rtlActive
         })}
