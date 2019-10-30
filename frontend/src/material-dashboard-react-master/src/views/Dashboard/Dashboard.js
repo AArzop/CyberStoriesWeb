@@ -34,6 +34,7 @@ import CardHeader from 'components/Card/CardHeader.js'
 import CardIcon from 'components/Card/CardIcon.js'
 import CardBody from 'components/Card/CardBody.js'
 import CardFooter from 'components/Card/CardFooter.js'
+import { withAjaxStoreData } from '../../../../hocs/async'
 
 import { bugs, website, server } from 'variables/general.js'
 
@@ -47,6 +48,13 @@ import styles from 'assets/jss/material-dashboard-react/views/dashboardStyle.js'
 
 function numberWithCommas (x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+}
+
+const Ajax = ({ id, url, config = {}, children }) => {
+  const Wrapped = withAjaxStoreData(id, url, config)(props => children(props))
+  return (
+    <Wrapped/>
+  )
 }
 
 const useStyles = makeStyles(styles)
@@ -63,9 +71,13 @@ export default function Dashboard () {
                 <VideogameAsset/>
               </CardIcon>
               <p className={classes.cardCategory}>Games played</p>
-              <h3 className={classes.cardTitle}>
-                {numberWithCommas(49850)}
-              </h3>
+              <Ajax id={'games'} url={'/services/games/'}>
+                {({ games }) => (
+                  <h3 className={classes.cardTitle}>
+                    {numberWithCommas(games.length)}
+                  </h3>
+                )}
+              </Ajax>
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
@@ -82,7 +94,11 @@ export default function Dashboard () {
                 <Store/>
               </CardIcon>
               <p className={classes.cardCategory}>Revenue</p>
-              <h3 className={classes.cardTitle}>$34,245</h3>
+              <Ajax id={'orders'} url={'/services/vr-headset-rents/'}>
+                {({orders}) => (
+                  <h3 className={classes.cardTitle}>{orders.reduce((acc, order) => acc + order.price, 0)} €</h3>
+                )}
+              </Ajax>
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
@@ -99,7 +115,11 @@ export default function Dashboard () {
                 <People/>
               </CardIcon>
               <p className={classes.cardCategory}>Visitors</p>
-              <h3 className={classes.cardTitle}>{numberWithCommas(37543)}</h3>
+              <Ajax id={'visitors'} url={'/services/visitors/'}>
+                {({ visitors }) => (
+                  <h3 className={classes.cardTitle}>{numberWithCommas(visitors.length)}</h3>
+                )}
+              </Ajax>
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
@@ -116,7 +136,11 @@ export default function Dashboard () {
                 <LocalPostOffice/>
               </CardIcon>
               <p className={classes.cardCategory}>Orders</p>
-              <h3 className={classes.cardTitle}>{numberWithCommas(245)}</h3>
+              <Ajax id={'orders'} url={'/services/vr-headset-rents/'}>
+                {({ orders }) => (
+                  <h3 className={classes.cardTitle}>{numberWithCommas(orders.length)}</h3>
+                )}
+              </Ajax>
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>

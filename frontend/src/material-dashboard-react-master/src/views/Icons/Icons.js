@@ -11,6 +11,8 @@ import CardHeader from 'components/Card/CardHeader.js'
 import CardBody from 'components/Card/CardBody.js'
 
 import styles from 'assets/jss/material-dashboard-react/views/iconsStyle.js'
+import GameMasterMapPane from '../../../../panes/GameMasterMapPane'
+import GameMasterEmailPane from '../../../../panes/GameMasterEmailPane'
 
 const useStyles = makeStyles(styles)
 
@@ -27,6 +29,8 @@ export default function Icons () {
             </p>
           </CardHeader>
           <CardBody>
+            <GameMasterMapPane className={'mt-5 mx-auto'}/>
+            <GameMasterEmailPane className={'mt-5 mx-auto'}/>
           </CardBody>
         </Card>
       </GridItem>
