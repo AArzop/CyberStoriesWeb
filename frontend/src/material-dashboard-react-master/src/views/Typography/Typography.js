@@ -19,6 +19,7 @@ import CustomTabs from 'components/CustomTabs/CustomTabs.js'
 import Tasks from 'components/Tasks/Tasks.js'
 import Table from 'components/Table/Table.js'
 import { bugs, website, server } from 'variables/general.js'
+import {withAjaxStoreData} from '../../../../hocs/async'
 
 import Code from '@material-ui/icons/Code'
 import Cloud from '@material-ui/icons/Cloud'
@@ -66,7 +67,7 @@ const styles = {
 
 const useStyles = makeStyles(styles)
 
-export default function TypographyPage () {
+function TypographyPage ({orders}) {
   const classes = useStyles()
   return (
     <Card>
@@ -86,8 +87,8 @@ export default function TypographyPage () {
               tabContent: (
                 <Tasks
                   checkedIndexes={[0, 3]}
-                  tasksIndexes={[0, 1, 2, 3]}
-                  tasks={bugs}
+                  tasksIndexes={orders.filter(order => order.status === 'REGISTERED').map((o, index) => index)}
+                  tasks={orders.filter(order => order.status === 'REGISTERED').map(order => order.description)}
                 />
               )
             },
@@ -97,8 +98,8 @@ export default function TypographyPage () {
               tabContent: (
                 <Tasks
                   checkedIndexes={[0]}
-                  tasksIndexes={[0, 1]}
-                  tasks={website}
+                  tasksIndexes={orders.filter(order => order.status === 'SHIPPED').map((o, index) => index)}
+                  tasks={orders.filter(order => order.status === 'SHIPPED').map(order => order.description)}
                 />
               )
             },
@@ -108,8 +109,8 @@ export default function TypographyPage () {
               tabContent: (
                 <Tasks
                   checkedIndexes={[1]}
-                  tasksIndexes={[0, 1, 2]}
-                  tasks={server}
+                  tasksIndexes={orders.filter(order => order.status === 'RECEIVED').map((o, index) => index)}
+                  tasks={orders.filter(order => order.status === 'RECEIVED').map(order => order.description)}
                 />
               )
             },
@@ -119,8 +120,8 @@ export default function TypographyPage () {
               tabContent: (
                 <Tasks
                   checkedIndexes={[1]}
-                  tasksIndexes={[0, 1, 2]}
-                  tasks={server}
+                  tasksIndexes={orders.filter(order => order.status === 'RETURNED').map((o, index) => index)}
+                  tasks={orders.filter(order => order.status === 'RETURNED').map(order => order.description)}
                 />
               )
             }
@@ -130,3 +131,5 @@ export default function TypographyPage () {
     </Card>
   )
 }
+
+export default withAjaxStoreData('orders', '/services/vr-headset-rents/')(TypographyPage)

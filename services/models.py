@@ -5,6 +5,7 @@ class VRHeadsetRent(models.Model):
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
     address = models.CharField(max_length=100)
+    description = models.CharField(max_length=1000)
     status = models.CharField(
         choices=[('REGISTERED', 'registered'), ('SHIPPED', 'shipped'), ('RECEIVED', 'received'),
                  ('RETURNED', 'returned')],
