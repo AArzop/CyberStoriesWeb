@@ -17,11 +17,10 @@
 */
 import React from 'react'
 import { createBrowserHistory } from 'history'
-import { Router, Route, Switch, Redirect } from 'react-router-dom'
+import { Router, Route, Switch } from 'react-router-dom'
 
 // core components
 import Admin from 'material-dashboard-react-master/src/layouts/Admin.js'
-import RTL from 'material-dashboard-react-master/src/layouts/RTL.js'
 
 import 'material-dashboard-react-master/src/assets/css/material-dashboard-react.css?v=1.8.0'
 
