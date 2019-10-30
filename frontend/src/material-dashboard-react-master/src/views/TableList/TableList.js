@@ -163,7 +163,7 @@ function TableList ({ leaderboardEntries }) {
                 .filter(nonEmptyFilter)
                 .sort(globalScoreSort)
                 .map((entry, index) => (
-                  [index + 1, entry.pseudo, () => <GrowingBar value={globalScore(entry)}/>, 'SomeCompany', 'SomeDate']
+                  [index + 1, entry.pseudo, () => <GrowingBar value={globalScore(entry)}/>, 'Murex', entry.gameResults[0].date]
                 ))}
             />
           </CardBody>
