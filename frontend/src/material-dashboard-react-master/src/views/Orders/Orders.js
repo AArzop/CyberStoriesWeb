@@ -19,7 +19,7 @@ import CustomTabs from 'components/CustomTabs/CustomTabs.js'
 import Tasks from 'components/Tasks/Tasks.js'
 import Table from 'components/Table/Table.js'
 import { bugs, website, server } from 'variables/general.js'
-import {withAjaxStoreData} from '../../../../hocs/async'
+import { withAjaxStoreData } from '../../../../hocs/async'
 
 import Code from '@material-ui/icons/Code'
 import Cloud from '@material-ui/icons/Cloud'
@@ -67,7 +67,7 @@ const styles = {
 
 const useStyles = makeStyles(styles)
 
-function TypographyPage ({orders}) {
+function Orders ({ orders }) {
   const classes = useStyles()
   return (
     <Card>
@@ -132,4 +132,4 @@ function TypographyPage ({orders}) {
   )
 }
 
-export default withAjaxStoreData('orders', '/services/vr-headset-rents/')(TypographyPage)
+export default withAjaxStoreData('orders', '/services/vr-headset-rents/')(Orders)
