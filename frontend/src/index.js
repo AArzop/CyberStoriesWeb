@@ -6,17 +6,11 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-d
 import '../lib/bootstrap/css/bootstrap.min.css'
 import IndexPage from './pages/index/IndexPage'
 import DownloadPage from './pages/download/DownloadPage'
-import LeaderboardPage from './pages/LeaderboardPage'
-import GameResultVisiblePage from './pages/GameResultVisiblePage'
 import LoginPage from './pages/login/LoginPage'
 import ProfilePage from './pages/profile/ProfilePage'
 import ResetPasswordPage from './pages/resetPassword/ResetPasswordPage'
-import GameMasterTokenPage from './pages/GameMasterTokenPage'
 import RegisterPage from './pages/register/RegisterPage'
-import GameMasterPage from './pages/GameMasterPage'
-import PlayerDetailsPage from './pages/PlayerDetailsPage'
 import NewsPage from './pages/news/NewsPage'
-import GameMasterWriteEmailPage from './pages/GameMasterWriteEmailPage'
 import TryPage from './pages/try/TryPage'
 import { ParallaxProvider } from 'react-scroll-parallax'
 import RentPage from './pages/rent/RentPage'
@@ -39,24 +33,11 @@ class App extends Component {
                 <Route exact path={'/news/'} component={NewsPage}/>
                 <Route exact path={'/article/'} component={ArticlePage}/>
                 <Route       path={'/admin/'} component={DashboardPage}/>
-                /* TODO move */
-                <Route exact path={'/leaderboard/'} component={LeaderboardPage}/>
-                <Route exact path={'/leaderboard/:playerId/'} component={PlayerDetailsPage}/>
-                /* TODO move */
-                <Route exact path={'/gameresult_visible/'} component={GameResultVisiblePage}/>
                 <Route exact path={'/login/'} component={LoginPage}/>
                 <Route exact path={'/register/'} component={RegisterPage}/>
                 <Route exact path={'/profile/'} component={ProfilePage}/>
-                /* TODO move */
-                <Route exact path={'/accounts/logout/'} component={IndexPage}/>
                 <Route exact path={'/change-password'} component={ChangePasswordPage}/>
                 <Route exact path={'/reset-password/'} component={ResetPasswordPage}/>
-                /* TODO move */
-                <Route exact path={'/game_master/token/'} component={GameMasterTokenPage}/>
-                /* TODO move */
-                <Route exact path={'/game_master/write_email/'} component={GameMasterWriteEmailPage}/>
-                /* TODO move */
-                <Route exact path={'/game_master/:token/'} component={GameMasterPage}/>
                 <Route exact path={'/'} component={IndexPage}/>
                 <Route component={IndexPage}/>
               </Switch>
