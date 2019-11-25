@@ -195,13 +195,6 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-# Google cloud storage
-DEFAULT_FILE_STORAGE = 'storages.backends.gcloud.GoogleCloudStorage'
-GS_BUCKET_NAME = 'cybersecurityseriousgame.appspot.com'
-GS_CREDENTIALS = service_account.Credentials.from_service_account_file(
-    os.path.join(BASE_DIR, 'mysite/CyberSecuritySeriousGame-e72d85c88e99.json')
-)
-
 # Django Webpack Loader
 
 WEBPACK_LOADER = {

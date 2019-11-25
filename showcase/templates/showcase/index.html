@@ -6,59 +6,6 @@
     Cyberstories
 {% endblock %}
 
-{% block css_import %}
-    <link rel="stylesheet" href="{% static 'showcase/css/index.css' %}">
-{% endblock %}
-
-{% block content %}
-    <iframe class="m-5" width="560" height="315" src="https://www.youtube.com/embed/6yNYVJUmPN8" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-    <br/>
-    <button type="button" class="btn btn-dark mx-auto try-button" onclick="window.location='{% url 'download' %}'">
-        {% trans 'TRY OUT NOW !' %}
-    </button>
-
-    <div class="container mx-auto mt-5 cards">
-        <div class="row">
-            <div class="col">
-                <div class="card mx-auto my-4" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Virtual Reality</h5>
-                        <p class="card-text">You play the game in an immersive environment</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card mx-auto my-4" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Five different stories</h5>
-                        <p class="card-text">Explore cybersecurity issues through multiple situations</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w-100"></div>
-            <div class="col">
-                <div class="card mx-auto my-4" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Leaderboard</h5>
-                        <p class="card-text">Compare your scores with your colleagues</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card mx-auto my-4" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Made for companies</h5>
-                        <p class="card-text">Specially adapted for companies and training courses
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-{% endblock %}
-
 {% block javascript %}
     <script>
         let CSRF_TOKEN = '{{ csrf_token }}';
