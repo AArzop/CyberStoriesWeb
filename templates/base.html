@@ -15,6 +15,14 @@
     <!-- favicon -->
     <link rel='shortcut icon' type='image/x-icon' href="{% static 'favicon.ico' %}"/>
 
+    <!-- Unity import -->
+    <link rel="stylesheet" href={% static 'webgl/TemplateData/style.css' %}>
+    <script src={% static 'webgl/TemplateData/UnityProgress.js' %}></script>
+    <script src={% static 'webgl/Build/UnityLoader.js' %}></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate('unityContainer', 'Build/Builds.json', { onProgress: UnityProgress })
+    </script>
+
     {% block css_import %}
     {% endblock %}
 </head>

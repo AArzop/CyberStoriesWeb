@@ -1,7 +1,6 @@
 from allauth.account.views import ConfirmEmailView
 from django.contrib import admin
-from django.urls import include, path
-from django.urls import re_path
+from django.urls import include, path, re_path
 from django.views.generic.base import RedirectView
 from mysite.views import FacebookLogin, TwitterLogin
 
@@ -21,5 +20,9 @@ urlpatterns = [
     re_path('password-reset/confirm/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$',
         RedirectView.as_view(url='/', permanent=True),
         name='password_reset_confirm'),
+    re_path('Build/Builds.json', RedirectView.as_view(url='/static/webgl/Build/Builds.json')),
+    path('Build/Builds.wasm.code.unityweb', RedirectView.as_view(url='/static/webgl/Build/Builds.wasm.code.unityweb')),
+    path('Build/Builds.wasm.framework.unityweb', RedirectView.as_view(url='/static/webgl/Build/Builds.wasm.framework.unityweb')),
+    path('Build/Builds.data.unityweb', RedirectView.as_view(url='/static/webgl/Build/Builds.data.unityweb')),
     re_path('.*', include('showcase.urls'))
 ]

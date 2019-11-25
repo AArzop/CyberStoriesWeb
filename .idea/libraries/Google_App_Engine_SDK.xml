@@ -28,6 +28,7 @@
       <root url="file:///lib/binfmt.d" />
       <root url="file:///lib/sasl2" />
       <root url="file:///lib/libqmi" />
+      <root url="file:///lib/libau.so" />
       <root url="file:///lib/gnome-contacts" />
       <root url="file:///lib/ld-linux.so.2" />
       <root url="file:///lib/colord" />
@@ -35,6 +36,7 @@
       <root url="file:///lib/llvm-8" />
       <root url="file:///lib/security" />
       <root url="file:///lib/udev" />
+      <root url="file:///lib/slack" />
       <root url="file:///lib/tracker" />
       <root url="file:///lib/git-core" />
       <root url="file:///lib/accountsservice" />
@@ -42,6 +44,7 @@
       <root url="file:///lib/python3.8" />
       <root url="file:///lib/bolt" />
       <root url="file:///lib/cryptsetup" />
+      <root url="file:///lib/gnome-tweak-tool" />
       <root url="file:///lib/python3" />
       <root url="file:///lib/crda" />
       <root url="file:///lib/ecryptfs" />
@@ -61,8 +64,8 @@
       <root url="file:///lib/gvfs" />
       <root url="file:///lib/ibus-mozc" />
       <root url="file:///lib/libnetpbm.so.10.0" />
-      <root url="file:///lib/grub-legacy" />
       <root url="file:///lib/ispell" />
+      <root url="file:///lib/libau.so.2" />
       <root url="file:///lib/cnf-update-db" />
       <root url="file:///lib/i386-linux-gnu" />
       <root url="file:///lib/libecryptfs.so.1.0.0" />
@@ -167,6 +170,7 @@
       <root url="file:///lib/libgjs.so.0" />
       <root url="file:///lib/gnome-disk-utility" />
       <root url="file:///lib/language-selector" />
+      <root url="file:///lib/libau.so.2.10" />
       <root url="file:///lib/cpp" />
       <root url="file:///lib/gcr" />
       <root url="file:///lib/eject" />
