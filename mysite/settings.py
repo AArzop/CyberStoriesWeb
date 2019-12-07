@@ -105,7 +105,7 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': ['templates', 'frontend/build'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -184,7 +184,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_ROOT = 'staticfiles'
-STATIC_URL = '/static/'
+STATIC_URL = '/staticfiles/'
 
 # Additional directories for static file finders
 STATICFILES_DIRS = [

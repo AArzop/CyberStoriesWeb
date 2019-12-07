@@ -1,4 +1,5 @@
 from allauth.account.views import ConfirmEmailView
+from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path, re_path
 from django.views.generic.base import RedirectView
@@ -24,5 +25,4 @@ urlpatterns = [
     path('Build/Builds.wasm.code.unityweb', RedirectView.as_view(url='/static/webgl/Build/Builds.wasm.code.unityweb')),
     path('Build/Builds.wasm.framework.unityweb', RedirectView.as_view(url='/static/webgl/Build/Builds.wasm.framework.unityweb')),
     path('Build/Builds.data.unityweb', RedirectView.as_view(url='/static/webgl/Build/Builds.data.unityweb')),
-    re_path('.*', include('showcase.urls'))
-]
+] + static('/', document_root='frontend/build/')
