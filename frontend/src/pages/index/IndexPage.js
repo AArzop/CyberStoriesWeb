@@ -62,9 +62,8 @@ class IndexPage extends Component {
                   </div>
                   <div className="card-box">
                     <h3 className="card-title mbr-bold mbr-fonts-style display-5">Réalité virtuelle</h3>
-                    <p className="card-text mbr-fonts-style mbr-pt-2 display-7">Click on the text in the block to select
-                      it and enter the text you want to show. Click on the icon to select another icon in the icons
-                      list.</p>
+                    <p className="card-text mbr-fonts-style mbr-pt-2 display-7">Cyberstories utilise la réalité virtuelle pour vous plonger dans un environnement immersif
+                      et riche. Vous pouvez intéragir avec l'environnement à l'aide des manettes de réalité virtuelle.</p>
                   </div>
                 </div>
               </div>
@@ -80,9 +79,8 @@ class IndexPage extends Component {
                   </div>
                   <div className="card-box">
                     <h3 className="card-title mbr-bold mbr-fonts-style display-5">Scénarios véridiques</h3>
-                    <p className="card-text mbr-fonts-style mbr-pt-2 display-7">Click on the text in the block to select
-                      it and enter the text you want to show. Click on the icon to select another icon in the icons
-                      list.</p>
+                    <p className="card-text mbr-fonts-style mbr-pt-2 display-7">Résolvez les quêtes pour garantir la sécurité informatique
+                    dans votre entreprise. Les scénarios sont basés sur les recommendations officielles de l'Agence Nationale de la Sécurité des Systèmes d'Information.</p>
                   </div>
                 </div>
               </div>
@@ -98,9 +96,8 @@ class IndexPage extends Component {
                   </div>
                   <div className="card-box">
                     <h3 className="card-title mbr-bold mbr-fonts-style display-5">Maître du jeu</h3>
-                    <p className="card-text mbr-fonts-style mbr-pt-2 display-7">Click on the text in the block to select
-                      it and enter the text you want to show. Click on the icon to select another icon in the icons
-                      list.</p>
+                    <p className="card-text mbr-fonts-style mbr-pt-2 display-7">Pour améliorer la qualité de la formation, vous pouvez faire intervenir un maître du jeu qui vient intéragir
+avec le joueur depuis la console du site web directement. Il peut fournir des aides et évaluer les compétences du joueur.</p>
                   </div>
                 </div>
               </div>
