@@ -14,7 +14,7 @@ const useStyles = makeStyles(styles)
 
 export default function SnackbarContent (props) {
   const classes = useStyles()
-  const { message, color, close, icon, rtlActive } = props
+  const { message, color, close, icon, rtlActive, style } = props
   var action = []
   const messageClasses = classNames({
     [classes.iconMessage]: icon !== undefined
@@ -33,11 +33,12 @@ export default function SnackbarContent (props) {
   }
   return (
     <Snack
+      style={style}
       message={
-        <div>
+        <span>
           {icon !== undefined ? <props.icon className={classes.icon}/> : null}
           <span className={messageClasses}>{message}</span>
-        </div>
+        </span>
       }
       classes={{
         root: classes.root + ' ' + classes[color],

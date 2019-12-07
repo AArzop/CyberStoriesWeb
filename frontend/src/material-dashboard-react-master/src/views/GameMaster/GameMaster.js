@@ -10,6 +10,9 @@ import styles from '../../assets/jss/material-dashboard-react/views/iconsStyle.j
 import map from '../../../../resources/images/map-transparent.png'
 import Button from '../../components/CustomButtons/Button'
 import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd'
+import CustomInput from '../../components/CustomInput/CustomInput'
+import InputLabel from '@material-ui/core/InputLabel'
+import SnackbarContent from '../../components/Snackbar/SnackbarContent'
 
 const useStyles = makeStyles(styles)
 
@@ -189,6 +192,7 @@ export default function GameMaster () {
                             )}
                           </Draggable>
                         ))}
+                        {provided.placeholder}
                         <Card style={{ margin: 5, width: '80%' }}/>
                         <Card style={{ margin: 5, width: '80%' }}/>
                         <Card style={{ margin: 5, width: '80%' }}/>
@@ -222,6 +226,7 @@ export default function GameMaster () {
                             )}
                           </Draggable>
                         ))}
+                        {provided.placeholder}
                         <Card style={{ margin: 5, width: '80%' }}/>
                         <Card style={{ margin: 5, width: '80%' }}/>
                         <Card style={{ margin: 5, width: '80%' }}/>
@@ -231,7 +236,53 @@ export default function GameMaster () {
                 </DragDropContext>
               </CardBody>
             </Card>
-            <Button color={'primary'}>Create a new mail</Button>
+            <Card>
+              <CardHeader color={'primary'}>
+                <h5 className={classes.cardTitleWhite}>Create a Mail</h5>
+              </CardHeader>
+              <CardBody style={{padding:40}}>
+                <GridContainer>
+                  <GridItem xs={12} sm={12} md={4}>
+                    <CustomInput
+                      labelText="Object"
+                      formControlProps={{
+                        fullWidth: true
+                      }}
+                    />
+                  </GridItem>
+                </GridContainer>
+                <GridContainer>
+                  <GridItem xs={12} sm={12} md={12}>
+                    <CustomInput
+                      labelText="Your mail content here ..."
+                      formControlProps={{
+                        fullWidth: true
+                      }}
+                      inputProps={{
+                        multiline: true,
+                        rows: 5
+                      }}
+                    />
+                  </GridItem>
+                </GridContainer>
+                <Button color={'primary'}>Create</Button>
+              </CardBody>
+            </Card>
+            <Card>
+              <CardHeader color={'primary'}>
+                <h5 className={classes.cardTitleWhite}>Chat</h5>
+              </CardHeader>
+              <CardBody style={{padding:40, paddingTop:0}}>
+                <CustomInput
+                  onChange={console.log}
+                  labelText={"Message"}
+                  formControlProps={{}}
+                />
+                <br/>
+                <br/>
+                <Card style={{padding:10, display:'inline'}}>Hello</Card><br/>
+              </CardBody>
+            </Card>
           </CardBody>
         </Card>
       </GridItem>

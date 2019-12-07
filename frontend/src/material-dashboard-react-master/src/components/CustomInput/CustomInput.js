@@ -23,7 +23,9 @@ export default function CustomInput (props) {
     labelProps,
     inputProps,
     error,
-    success
+    success,
+    onChange,
+    onKeyDown
   } = props
 
   const labelClasses = classNames({
@@ -53,6 +55,8 @@ export default function CustomInput (props) {
         </InputLabel>
       ) : null}
       <Input
+        onChange={onChange}
+        onKeyDown={onkeydown}
         classes={{
           root: marginTop,
           disabled: classes.disabled,
