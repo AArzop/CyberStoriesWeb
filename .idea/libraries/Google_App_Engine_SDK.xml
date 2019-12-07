@@ -49,6 +49,7 @@
       <root url="file:///lib/crda" />
       <root url="file:///lib/ecryptfs" />
       <root url="file:///lib/dkms" />
+      <root url="file:///lib/simplescreenrecorder" />
       <root url="file:///lib/ifupdown" />
       <root url="file:///lib/libecryptfs.so.1" />
       <root url="file:///lib/initramfs-tools" />
