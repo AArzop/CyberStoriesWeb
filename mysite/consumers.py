@@ -27,7 +27,6 @@ class APIConsumer(WebsocketConsumer):
         )
 
     def message(self, event):
-        print("RECEIVED")
         self.send(text_data=event['payload'])
 
 
