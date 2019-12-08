@@ -24,6 +24,15 @@ function Emails({emails}) {
     websocket = new WebSocket(wsScheme + '://' + window.location.host + url)
   }, [])
 
+  useEffect(() => {
+    // handling diff
+    const newEmails = emails.filter(email => (
+      mails.find(mail => mail.id === email.id) === undefined
+      && sentMails.find(mail => mail.id === email.id) === undefined
+    ))
+    setMails([...mails, ...newEmails])
+  }, [emails])
+
   // https://codesandbox.io/s/ql08j35j3q
   const droppableIdToList = (id) => {
     if (id === 'mailsDroppable') {

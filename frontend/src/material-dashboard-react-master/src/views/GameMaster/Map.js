@@ -6,6 +6,7 @@ import map from '../../../../resources/images/map-transparent.png'
 import { makeStyles } from '@material-ui/core'
 import styles from '../../assets/jss/material-dashboard-react/views/iconsStyle'
 import { withWebSocketStoreData } from '../../../../hocs/async'
+import './radar.css'
 
 const useStyles = makeStyles(styles)
 
@@ -18,7 +19,14 @@ function Map({position}) {
         <h5 className={classes.cardTitleWhite}>Map</h5>
       </CardHeader>
       <CardBody style={{ textAlign: 'center', overflow: 'hidden', paddingTop: '5rem', paddingBottom: '5rem' }}>
-        <span>{JSON.stringify(position)}</span>
+        {
+          position && (
+            <div id={'container'} style={{top:position.y, left:position.x}}>
+              <div id={'one'}/>
+              <div id={'two'}/>
+            </div>
+          )
+        }
         <img src={map}/>
       </CardBody>
     </Card>
