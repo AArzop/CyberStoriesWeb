@@ -5,43 +5,14 @@ import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd'
 import Card from '../../components/Card/Card'
 import { makeStyles } from '@material-ui/core'
 import styles from '../../assets/jss/material-dashboard-react/views/iconsStyle'
+import { withSyncStoreData } from '../../../../hocs/async'
 
 const useStyles = makeStyles(styles)
 
-export default function Emails() {
+function Emails({emails}) {
   const classes = useStyles()
 
-  const [mails, setMails] = useState([
-    {
-      title: 'Vous êtes un gagnant !',
-      id: 0
-    },
-    {
-      title: 'Aide pour la quête °2',
-      id: 1
-    },
-    {
-      title: 'Réunion conseil 14/02',
-      id: 3
-    },
-    {
-      title: 'Formation au lean management',
-      id: 5
-    },
-    {
-      title: 'Recevez un cadeau pour Noël',
-      id: 6
-    },
-    {
-      title: 'Venez voir nos promitions shoppy shop',
-      id: 8
-    },
-    {
-      title: 'Retour sur la réunion',
-      id: 10
-    }
-  ])
-
+  const setMails = () => {} // noop
   const [sentMails, setSentMails] = useState([
     {
       title: 'Rendez-vous Eglise d\'Auteuil 23/06',
@@ -68,7 +39,7 @@ export default function Emails() {
   // https://codesandbox.io/s/ql08j35j3q
   const droppableIdToList = (id) => {
     if (id === 'mailsDroppable') {
-      return mails
+      return emails
     }
     // sentMailsDroppable
     else {
@@ -149,7 +120,7 @@ export default function Emails() {
                 <Card style={{ margin: 5, width: '80%' }}/>
                 <Card style={{ margin: 5, width: '80%' }}/>
                 <Card style={{ margin: 5, width: '80%' }}/>
-                {mails.map((mail, index) => (
+                {emails.map((mail, index) => (
                   <Draggable
                     key={mail.id}
                     draggableId={mail.id.toString()}
@@ -162,7 +133,7 @@ export default function Emails() {
                         {...provided.dragHandleProps}
                         style={{ margin: 5, width: '80%', ...provided.draggableProps.style }}
                       >
-                        <CardHeader>{mail.title}</CardHeader>
+                        <CardHeader>{mail.object}</CardHeader>
                       </Card>
                     )}
                   </Draggable>
@@ -196,7 +167,7 @@ export default function Emails() {
                         {...provided.dragHandleProps}
                         style={{ margin: 5, width: '80%', ...provided.draggableProps.style }}
                       >
-                        <CardHeader>{mail.title}</CardHeader>
+                        <CardHeader>{mail.object}</CardHeader>
                       </Card>
                     )}
                   </Draggable>
@@ -213,3 +184,5 @@ export default function Emails() {
     </Card>
   )
 }
+
+export default withSyncStoreData('emails', '/gamemaster/emails/', '/ws/')(Emails)

@@ -6,8 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="6fb6c4dd-be81-42bf-8741-c52aba4c8fb8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hocs/async.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hocs/async.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/material-dashboard-react-master/src/views/GameMaster/Chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/material-dashboard-react-master/src/views/GameMaster/Chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/material-dashboard-react-master/src/views/GameMaster/CreateMail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/material-dashboard-react-master/src/views/GameMaster/CreateMail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/material-dashboard-react-master/src/views/GameMaster/Emails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/material-dashboard-react-master/src/views/GameMaster/Emails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gamemaster/consumers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gamemaster/endpoints.py" beforeDir="false" afterPath="$PROJECT_DIR$/../gamemaster/endpoints.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gamemaster/push.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gamemaster/routing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gamemaster/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../gamemaster/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leaderboard/consumers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mysite/routing.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mysite/routing.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,6 +105,7 @@
       <workItem from="1569403175258" duration="18000" />
       <workItem from="1575705174369" duration="3571000" />
       <workItem from="1575734331524" duration="2949000" />
+      <workItem from="1575795632524" duration="3823000" />
     </task>
     <servers />
   </component>
