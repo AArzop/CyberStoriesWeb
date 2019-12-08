@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import CardHeader from '../../components/Card/CardHeader'
 import CardBody from '../../components/Card/CardBody'
 import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd'
@@ -9,37 +9,25 @@ import { withSyncStoreData } from '../../../../hocs/async'
 
 const useStyles = makeStyles(styles)
 
+let websocket = null
+
 function Emails({emails}) {
   const classes = useStyles()
 
-  const setMails = () => {} // noop
-  const [sentMails, setSentMails] = useState([
-    {
-      title: 'Rendez-vous Eglise d\'Auteuil 23/06',
-      sent: true,
-      id: 9
-    },
-    {
-      title: 'Aide pour la quête n°3',
-      sent: true,
-      id: 7
-    },
-    {
-      title: 'Demande d\'informations',
-      sent: true,
-      id: 4
-    },
-    {
-      title: 'Remboursement frais déplacement',
-      sent: true,
-      id: 2
-    }
-  ])
+  const [mails, setMails] = useState(emails)
+
+  const [sentMails, setSentMails] = useState([])
+
+  useEffect(() => {
+    const url = '/ws/'
+    let wsScheme = window.location.protocol === 'https:' ? 'wss' : 'ws'
+    websocket = new WebSocket(wsScheme + '://' + window.location.host + url)
+  }, [])
 
   // https://codesandbox.io/s/ql08j35j3q
   const droppableIdToList = (id) => {
     if (id === 'mailsDroppable') {
-      return emails
+      return mails
     }
     // sentMailsDroppable
     else {
@@ -99,6 +87,16 @@ function Emails({emails}) {
         destination
       )
 
+      if (destination.droppableId === 'sentMailsDroppable') {
+        websocket.send(JSON.stringify({
+          type: 'message',
+          'payload': {
+            'namespace': 'email_sent',
+            'data': droppableIdToList(source.droppableId)[source.index]
+          }
+        }))
+      }
+
       setMails(result.mailsDroppable)
       setSentMails(result.sentMailsDroppable)
     }
@@ -120,7 +118,7 @@ function Emails({emails}) {
                 <Card style={{ margin: 5, width: '80%' }}/>
                 <Card style={{ margin: 5, width: '80%' }}/>
                 <Card style={{ margin: 5, width: '80%' }}/>
-                {emails.map((mail, index) => (
+                {mails.map((mail, index) => (
                   <Draggable
                     key={mail.id}
                     draggableId={mail.id.toString()}
