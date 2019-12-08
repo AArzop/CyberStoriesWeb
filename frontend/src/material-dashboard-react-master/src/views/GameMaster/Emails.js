@@ -36,9 +36,6 @@ function Emails ({ emails }) {
       && sentMails.find(mail => mail.id === email.id) === undefined
     ))
     setMails([...mails, ...newEmails])
-    const removedEmails = [
-      ...mails.filter()
-    ]
   }, [emails])
 
   // https://codesandbox.io/s/ql08j35j3q

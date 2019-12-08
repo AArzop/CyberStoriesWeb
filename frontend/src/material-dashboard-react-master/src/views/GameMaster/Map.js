@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Card from '../../components/Card/Card'
 import CardHeader from '../../components/Card/CardHeader'
 import CardBody from '../../components/Card/CardBody'
@@ -10,7 +10,7 @@ import './radar.css'
 
 const useStyles = makeStyles(styles)
 
-function Map({position}) {
+function Map ({ position }) {
   const classes = useStyles()
 
   return (
@@ -19,15 +19,17 @@ function Map({position}) {
         <h5 className={classes.cardTitleWhite}>Map</h5>
       </CardHeader>
       <CardBody style={{ textAlign: 'center', overflow: 'hidden', paddingTop: '5rem', paddingBottom: '5rem' }}>
-        {
-          position && (
-            <div id={'container'} style={{top:position.y, left:position.x}}>
-              <div id={'one'}/>
-              <div id={'two'}/>
-            </div>
-          )
-        }
-        <img src={map}/>
+        <div style={{ position: 'relative', width: 980, height: 322, left: '50%', transform: 'translate(-50%,0%)' }}>
+          <img src={map} style={{ position: 'absolute', top: 0, left: 0, zIndex: 1 }}/>
+          {
+            position && (
+              <div id={'container'} style={{ top: position.y, left: position.x, position: 'absolute', zIndex: 2 }}>
+                <div id={'one'}/>
+                <div id={'two'}/>
+              </div>
+            )
+          }
+        </div>
       </CardBody>
     </Card>
   )
