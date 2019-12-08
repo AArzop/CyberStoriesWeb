@@ -2,9 +2,6 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import withStyles from 'react-jss'
 import { compose } from 'redux'
-import HeaderPane from '../panes/HeaderPane'
-import NavigationBarPane from '../panes/NavigationBarPane'
-import FooterPane from '../panes/FooterPane'
 
 const styles = {
   wrapper: {
@@ -75,9 +72,9 @@ BasicLayout.PropsTypes = {
 }
 
 BasicLayout.defaultProps = {
-  header: <HeaderPane/>,
-  navbar: <NavigationBarPane/>,
-  footer: <FooterPane/>
+  header: <div/>,
+  navbar: <div/>,
+  footer: <div/>
 }
 
 export default compose(

@@ -1,4 +1,4 @@
-import { get } from '../utils/fetch'
+import { get } from 'fetch-factorized'
 
 export const SET_AJAX_LOADING = 'SET_AJAX_LOADING'
 export const SET_AJAX_RESPONSE = 'SET_AJAX_RESPONSE'

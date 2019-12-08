@@ -84,7 +84,8 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.twitter',
     'allauth.socialaccount.providers.facebook',
     'showcase',
-    'gamemaster'
+    'gamemaster',
+    'services'
 ]
 
 MIDDLEWARE = [
@@ -104,7 +105,7 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': ['templates', 'frontend/build'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -183,7 +184,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_ROOT = 'staticfiles'
-STATIC_URL = '/static/'
+STATIC_URL = '/staticfiles/'
 
 # Additional directories for static file finders
 STATICFILES_DIRS = [
@@ -193,13 +194,6 @@ STATICFILES_DIRS = [
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
-
-# Google cloud storage
-DEFAULT_FILE_STORAGE = 'storages.backends.gcloud.GoogleCloudStorage'
-GS_BUCKET_NAME = 'cybersecurityseriousgame.appspot.com'
-GS_CREDENTIALS = service_account.Credentials.from_service_account_file(
-    os.path.join(BASE_DIR, 'mysite/CyberSecuritySeriousGame-e72d85c88e99.json')
-)
 
 # Django Webpack Loader
 

@@ -1,17 +1,13 @@
 import React, { Component } from 'react'
 import withStyles from 'react-jss'
 import { compose } from 'redux'
-import { get } from '../utils/fetch'
-import { setProfile } from '../actions/authentication'
+import { get } from 'fetch-factorized'
+import { AUTHENTICATE } from '../actions/authentication'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
 import AutoForm, { required } from '../utils/AutoForm'
 
 const styles = {}
-
-const mapDispatchToProps = dispatch => ({
-  setProfile: profile => dispatch(setProfile(profile))
-})
 
 class LoginForm extends Component {
   render () {
@@ -21,28 +17,31 @@ class LoginForm extends Component {
         method={'POST'}
         onSubmitted={() => {
           get('/rest-auth/user/').then((json) => {
-            this.props.setProfile({
-              username: json.username,
-              email: json.email
+            this.props.dispatch({
+              type: AUTHENTICATE,
+              payload: {
+                username: json.username,
+                email: json.email
+              }
             })
             this.props.history.push('/')
           })
         }}
-        buttonDisplayText={'Login'}
+        buttonDisplayText={'Se connecter'}
         feedbackOnValidFields={false}
         fields={[
           {
             name: 'username',
-            displayName: 'Username',
-            placeholder: 'Username',
+            displayName: 'Nom d\'utilisateur',
+            placeholder: 'Nom d\'utilisateur',
             initialValue: '',
             type: 'text',
             clientSideValidation: required
           },
           {
             name: 'password',
-            displayName: 'Password',
-            placeholder: 'Password',
+            displayName: 'Mot-de-passe',
+            placeholder: 'Mot-de-passe',
             initialValue: '',
             type: 'password',
             clientSideValidation: required
@@ -59,6 +58,6 @@ LoginForm.defaultProps = {}
 
 export default compose(
   withStyles(styles),
-  connect(null, mapDispatchToProps),
+  connect(),
   withRouter
 )(LoginForm)

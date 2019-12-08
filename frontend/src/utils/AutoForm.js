@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import withStyles from 'react-jss'
 import { compose } from 'redux'
 import { Field, Form, Formik } from 'formik'
-import { fetchBase } from './fetch'
+import { fetchBase } from 'fetch-factorized'
 import classNames from 'classnames'
-import LoadingRing from '../elements/LoadingRing'
+import LoadingRing from '../components/LoadingRing'
 import settings from '../settings'
 
 const styles = {
@@ -52,7 +52,7 @@ class AutoForm extends Component {
             ) : null}
             {this.props.fields.map((field, index) => (
               <div className={'form-group'} key={index}>
-                <Field type={field.type}
+                <Field type={field.type} onBlur={() => {}}
                   validate={(values) => field.serverSideValidation && field.serverSideValidation(values[field.name], values).then(errors => {
                     if (errors && errors.length > 0) { throw errors }
                   })}
@@ -73,9 +73,9 @@ class AutoForm extends Component {
                 </ul>}
               </div>
             ))}
-            <div className={this.props.classes.buttonWrapper}>
+            <div className={`align-center`}>
               <button type={'submit'} disabled={isSubmitting}
-                className={'btn btn-dark'}>{this.props.buttonDisplayText}
+                className={'btn btn-primary btn-form display-4'}>{this.props.buttonDisplayText}
               </button>
               {isSubmitting ? <LoadingRing size={'small'} className={'ml-1'}/> : null}
             </div>
@@ -120,15 +120,15 @@ export default compose(
   withStyles(styles)
 )(AutoForm)
 
-export const required = (value) => value && value.length > 0 ? [] : ['This field is required']
+export const required = (value) => value && value.length > 0 ? [] : ['Ce champ est requis']
 export const minimalLength = minimalLength => value => (
-  value && value.length >= minimalLength ? [] : [`This field must be at least ${minimalLength} characters long`]
+  value && value.length >= minimalLength ? [] : [`Ce champs doit comporter au moins ${minimalLength} caractères`]
 )
 export const validEmail = value => (
-  value && settings.EMAIL_REGEX.test(value.toLowerCase()) ? [] : ['This email is not valid']
+  value && settings.EMAIL_REGEX.test(value.toLowerCase()) ? [] : ['Cet email n\'est pas valide']
 )
 export const sameAs = (otherFieldName, errorMessage) => (value, values) => (
-  value === values[otherFieldName] ? [] : [errorMessage || 'This field is different']
+  value === values[otherFieldName] ? [] : [errorMessage || 'Ce champ est différent']
 )
 
 export const combineValidators = validators => (value, values) => {

@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { fetchAjaxStoreData, updateAjaxStoreData } from '../actions/actions'
-import LoadingRing from '../elements/LoadingRing'
+import LoadingRing from '../components/LoadingRing'
+import { compose } from 'redux'
 
 export const withAjaxStoreData = (id, url, config = {}) => (WrappedComponent) => {
   const mapStateToProps = state => ({
@@ -51,7 +52,9 @@ export const withAjaxStoreData = (id, url, config = {}) => (WrappedComponent) =>
   )
 }
 
-export const withWebSocketStoreData = (id, url) => (WrappedComponent) => {
+export const withWebSocketStoreData = (id, url, namespace = null) => (WrappedComponent) => {
+  namespace = namespace || id
+
   const mapStateToProps = state => ({
     response: state.ajax[id] && state.ajax[id].response
   })
@@ -63,22 +66,24 @@ export const withWebSocketStoreData = (id, url) => (WrappedComponent) => {
   return (
     connect(mapStateToProps, mapDispatchToProps)(
       class extends Component {
-        componentDidMount () {
+        componentDidMount() {
           let wsScheme = window.location.protocol === 'https:' ? 'wss' : 'ws'
           let webSocket = new WebSocket(
             wsScheme + '://' + window.location.host +
             url)
 
           webSocket.onmessage = (e) => {
-            this.props.update(JSON.parse(JSON.parse(e.data).message))
+            const content = JSON.parse(e.data)
+            if (content.namespace !== namespace) { return }
+            this.props.update(JSON.parse(content.data))
           }
 
           webSocket.onClose = () => console.warn('Websocket closed unexpectedly')
         }
 
-        render () {
+        render() {
           return (
-            <WrappedComponent {...{ [id]: this.props.response }} {...this.props}>
+            <WrappedComponent {...{[id]: this.props.response}} {...this.props}>
               {this.props.children}
             </WrappedComponent>
           )
@@ -87,3 +92,9 @@ export const withWebSocketStoreData = (id, url) => (WrappedComponent) => {
     )
   )
 }
+
+export const withSyncStoreData = (id, httpUrl, wsUrl, namespace = null) => compose(
+  withWebSocketStoreData(id, wsUrl, namespace),
+  withAjaxStoreData(id, httpUrl)
+)
+

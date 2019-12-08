@@ -1,5 +1,5 @@
 /**
- * Converts a javascript object into form data. Form data doesn't support nested objects.
+ * Converts a js object into form data. Form data doesn't support nested objects.
  * @param values
  * @return {FormData}
  */

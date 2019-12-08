@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import classNames from 'classnames'
 import withStyles from 'react-jss'
-import GrowingBar from '../elements/GrowingBar'
+import GrowingBar from './GrowingBar'
 
 const styles = {
   gameResult: {

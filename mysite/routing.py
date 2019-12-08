@@ -1,13 +1,13 @@
 from channels.auth import AuthMiddlewareStack
 from channels.routing import ProtocolTypeRouter, URLRouter
-import leaderboard.routing
-import gamemaster.routing
+from django.urls import path, re_path
+
+from .consumers import APIConsumer
 
 application = ProtocolTypeRouter({
     'websocket': AuthMiddlewareStack(
-        URLRouter(
-            leaderboard.routing.websocket_urlpatterns +
-            gamemaster.routing.websocket_urlpatterns
-        )
+        URLRouter([
+            path('ws/', APIConsumer)
+        ])
     )
 })
