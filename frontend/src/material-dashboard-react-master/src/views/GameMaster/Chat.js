@@ -20,7 +20,7 @@ export default function Chat () {
 
   const handleKeyDown = (event) => {
     if (event.key === 'Enter' && value !== '') {
-      setMessages([...messages, value])
+      setMessages([value, ...messages])
       setValue('')
     }
   }

@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fb6c4dd-be81-42bf-8741-c52aba4c8fb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/material-dashboard-react-master/src/views/GameMaster/Chat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/material-dashboard-react-master/src/views/GameMaster/CreateMail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/material-dashboard-react-master/src/views/GameMaster/Emails.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/material-dashboard-react-master/src/views/GameMaster/Map.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/material-dashboard-react-master/src/components/CustomInput/CustomInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/material-dashboard-react-master/src/components/CustomInput/CustomInput.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/material-dashboard-react-master/src/views/GameMaster/GameMaster.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/material-dashboard-react-master/src/views/GameMaster/GameMaster.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/material-dashboard-react-master/src/views/GameMaster/Chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/material-dashboard-react-master/src/views/GameMaster/Chat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/material-dashboard-react-master/src/views/GameMaster/CreateMail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/material-dashboard-react-master/src/views/GameMaster/CreateMail.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
