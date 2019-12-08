@@ -6,12 +6,17 @@ import Card from '../../components/Card/Card'
 import { makeStyles } from '@material-ui/core'
 import styles from '../../assets/jss/material-dashboard-react/views/iconsStyle'
 import { withSyncStoreData } from '../../../../hocs/async'
+import IconButton from '@material-ui/core/IconButton'
+import Close from '@material-ui/icons/Close'
+import Tooltip from '@material-ui/core/Tooltip'
+import styles_task from '../../assets/jss/material-dashboard-react/components/tasksStyle.js'
+import { delete_ } from 'fetch-factorized'
 
-const useStyles = makeStyles(styles)
+const useStyles = makeStyles({...styles, ...styles_task})
 
 let websocket = null
 
-function Emails({emails}) {
+function Emails ({ emails }) {
   const classes = useStyles()
 
   const [mails, setMails] = useState(emails)
@@ -31,6 +36,9 @@ function Emails({emails}) {
       && sentMails.find(mail => mail.id === email.id) === undefined
     ))
     setMails([...mails, ...newEmails])
+    const removedEmails = [
+      ...mails.filter()
+    ]
   }, [emails])
 
   // https://codesandbox.io/s/ql08j35j3q
@@ -40,7 +48,7 @@ function Emails({emails}) {
     }
     // sentMailsDroppable
     else {
-      return sentMails;
+      return sentMails
     }
   }
 
@@ -52,21 +60,25 @@ function Emails({emails}) {
   }
 
   const move = (source, destination, droppableSource, droppableDestination) => {
-    const sourceClone = Array.from(source);
-    const destClone = Array.from(destination);
-    const [removed] = sourceClone.splice(droppableSource.index, 1);
+    const sourceClone = Array.from(source)
+    const destClone = Array.from(destination)
+    const [removed] = sourceClone.splice(droppableSource.index, 1)
 
-    destClone.splice(droppableDestination.index, 0, removed);
+    destClone.splice(droppableDestination.index, 0, removed)
 
-    const result = {};
-    result[droppableSource.droppableId] = sourceClone;
-    result[droppableDestination.droppableId] = destClone;
+    const result = {}
+    result[droppableSource.droppableId] = sourceClone
+    result[droppableDestination.droppableId] = destClone
 
-    return result;
+    return result
+  }
+
+  const handleDelete = (mailId) => {
+    delete_(`/gamemaster/email/${mailId}`)
   }
 
   const handleDragEnd = (result) => {
-    const {source, destination} = result
+    const { source, destination } = result
 
     // dropped outside of droppable
     if (!destination) {
@@ -79,16 +91,14 @@ function Emails({emails}) {
         droppableIdToList(source.droppableId),
         source.index,
         destination.index
-      );
+      )
 
       if (source.droppableId === 'mailsDroppable') {
         setMails(mails)
-      }
-      else {
+      } else {
         setSentMails(mails)
       }
-    }
-    else {
+    } else {
       const result = move(
         droppableIdToList(source.droppableId),
         droppableIdToList(destination.droppableId),
@@ -140,7 +150,27 @@ function Emails({emails}) {
                         {...provided.dragHandleProps}
                         style={{ margin: 5, width: '80%', ...provided.draggableProps.style }}
                       >
-                        <CardHeader>{mail.object}</CardHeader>
+                        <CardHeader>{mail.object}
+                          <Tooltip
+                            id="tooltip-top-start"
+                            title="Delete"
+                            placement="top"
+                            classes={{ tooltip: classes.tooltip }}
+                          >
+                            <IconButton
+                              aria-label="Close"
+                              className={classes.tableActionButton}
+                              style={{position: 'absolute', right:10}}
+                              onClick={() => handleDelete(mail.id)}
+                            >
+                              <Close
+                                className={
+                                  classes.tableActionButtonIcon + ' ' + classes.close
+                                }
+                              />
+                            </IconButton>
+                          </Tooltip>
+                        </CardHeader>
                       </Card>
                     )}
                   </Draggable>
@@ -153,7 +183,7 @@ function Emails({emails}) {
             )}
           </Droppable>
           <Droppable droppableId={'sentMailsDroppable'}>
-            {(provided, snaphost) => (
+            {(provided) => (
               <Card style={{ alignItems: 'center' }} innerRef={provided.innerRef}>
                 <CardHeader color={'primary'} style={{ width: '90%' }}>
                   <h6 className={classes.cardTitleWhite}>Sent</h6>

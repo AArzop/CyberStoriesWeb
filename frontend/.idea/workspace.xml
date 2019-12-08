@@ -5,10 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fb6c4dd-be81-42bf-8741-c52aba4c8fb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/material-dashboard-react-master/src/views/GameMaster/radar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/precache-manifest.1dd0f8db1455d16684f2b0ef72c0625b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/2.6d24993f.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/2.6d24993f.chunk.js.LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/2.6d24993f.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.b08dbe9a.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.b08dbe9a.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.63c1efab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.63c1efab.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/material-dashboard-react-master/src/assets/jss/material-dashboard-react/components/tasksStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/material-dashboard-react-master/src/assets/jss/material-dashboard-react/components/tasksStyle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/material-dashboard-react-master/src/views/GameMaster/Emails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/material-dashboard-react-master/src/views/GameMaster/Emails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/material-dashboard-react-master/src/views/GameMaster/Map.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/material-dashboard-react-master/src/views/GameMaster/Map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mysite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mysite/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,6 +112,7 @@
       <workItem from="1575705174369" duration="3571000" />
       <workItem from="1575734331524" duration="2949000" />
       <workItem from="1575795632524" duration="8475000" />
+      <workItem from="1575821519826" duration="2197000" />
     </task>
     <servers />
   </component>

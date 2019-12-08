@@ -50,7 +50,7 @@ const tasksStyle = {
   },
   close: {
     backgroundColor: 'transparent',
-    color: dangerColor[0],
+    color: grayColor[0],
     boxShadow: 'none'
   }
 }

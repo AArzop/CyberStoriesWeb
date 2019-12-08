@@ -2,7 +2,7 @@ from allauth.account.views import ConfirmEmailView
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path, re_path
-from django.views.generic.base import RedirectView
+from django.views.generic.base import RedirectView, TemplateView
 from mysite.views import FacebookLogin, TwitterLogin
 
 urlpatterns = [
@@ -25,4 +25,5 @@ urlpatterns = [
     path('Build/Builds.wasm.code.unityweb', RedirectView.as_view(url='/static/webgl/Build/Builds.wasm.code.unityweb')),
     path('Build/Builds.wasm.framework.unityweb', RedirectView.as_view(url='/static/webgl/Build/Builds.wasm.framework.unityweb')),
     path('Build/Builds.data.unityweb', RedirectView.as_view(url='/static/webgl/Build/Builds.data.unityweb')),
-] + static('/', document_root='frontend/build/')
+    re_path('.*', TemplateView.as_view(template_name='index.html'))
+]
