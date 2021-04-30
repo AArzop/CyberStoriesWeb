@@ -64,7 +64,7 @@ pytz==2018.9
 redis==2.10.6
 requests==2.21.0
 requests-oauthlib==1.2.0
-rsa==4.0
+rsa==4.7
 sentry-sdk==0.7.14
 six==1.12.0
 Twisted==19.2.0
